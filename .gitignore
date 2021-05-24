@@ -1,0 +1,11 @@
+node_modules/
+
+# IntellijIdea files
+.idea/
+samples
+yarn.lock
+package.json
+.csscomb.json
+.yarnrc
+gulpfile.js
+package-lock.json
