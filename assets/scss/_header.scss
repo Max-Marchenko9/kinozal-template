@@ -1,0 +1,18 @@
+.header {
+    @extend %margin-bottom-lg;
+}
+
+.header-logo {
+    padding: 100px 0px;
+    text-align: center;
+
+    &__title {
+        display: block;
+        @extend %text-shadow;
+        font-size: 3.5rem;
+    }
+    &__description {
+        display: block;
+        @extend %text-shadow;
+    }
+}

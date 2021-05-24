@@ -1,0 +1,43 @@
+.header {
+  margin-bottom: 80.0px;
+}
+
+.header-logo__title, .header-logo__description {
+  text-shadow: 0 0 5px black, 0 0 5px black, 0 0 5px black;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: #165690;
+}
+
+a:hover, a:focus {
+  color: #df8a13;
+  text-decoration: none;
+}
+
+.header-logo {
+  padding: 100px 0px;
+  text-align: center;
+}
+
+.header-logo__title {
+  display: block;
+  font-size: 3.5rem;
+}
+
+.header-logo__description {
+  display: block;
+}
