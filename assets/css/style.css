@@ -1,4 +1,4 @@
-.header {
+.header, .main, .left-sidebar {
   margin-bottom: 80.0px;
 }
 
@@ -38,6 +38,25 @@
   margin-right: 0;
 }
 
+.panel-info {
+  border: none;
+  background-color: #ededed;
+  margin-bottom: 30px;
+}
+
+.panel-info > .panel-heading {
+  color: #ffffff;
+  background-color: #df8a13;
+  border-color: none;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+}
+
+.panel-body {
+  border: 1px solid #dddddd;
+  border-radius: 0 0 4px 4px;
+}
+
 html {
   font-size: 16px;
   overflow-y: scroll;
@@ -55,6 +74,12 @@ a {
 a:hover, a:focus {
   color: #df8a13;
   text-decoration: none;
+}
+
+h1 {
+  font-family: "PT Serif", serif;
+  margin-top: -6px;
+  font-size: 3rem;
 }
 
 .header-logo {
@@ -78,6 +103,19 @@ a:hover, a:focus {
   color: #ffffff;
   font-size: 1.15rem;
   letter-spacing: 0.2em;
+}
+
+.left-sidebar .panel:last-of-type {
+  margin-bottom: 0;
+}
+
+.vertical-slider {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.vertical-slider img {
+  width: 100%;
 }
 
 @media (min-width: 576px) {
