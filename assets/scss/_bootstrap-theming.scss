@@ -58,22 +58,55 @@
 
   margin-right: 0;
 }
-.panel-info {
-  margin-bottom: $gap * 2;
+.panel {
+  &-info {
+    margin-bottom: $gap * 2;
+  
+    border: none;
+    background-color: darken($color-light, 7%);
 
-  border: none;
-  background-color: darken($color-light, 7%);
-}
-.panel-info > .panel-heading {
-  letter-spacing: 0.1em;
-
-  color: $color-light;
-  border-color: none;
-  background-color: $color-accent;
-
-  font-size: 1.2rem;
+    > .panel-heading {
+      letter-spacing: 0.1em;
+      color: $color-light;
+      border-color: none;
+      background-color: $color-accent;
+      font-size: 1.2rem;
+    }
+  }
 }
 .panel-body {
   border: 1px solid $color-gray;
   border-radius: 0 0 4px 4px;
+}
+.input {
+  &-lg,
+  &-group-lg > .form-control {
+    font-size: 0.875rem;
+  }
+}
+.user-login {
+  position: relative;
+
+  &__tabs {
+    position: absolute;
+    top: 0;
+    right: $gap / 3 * 2;
+    border: none;
+
+    a {
+      background-color: transparent !important;
+      border: none !important;
+      color: $color-gray;
+      padding: 14px 5px 11px !important;
+
+      &:hover,
+      &:focus {
+        color: $color-gray;
+      }
+    }
+
+    .active a {
+      color: $color-light !important;
+    }
+  }
 }

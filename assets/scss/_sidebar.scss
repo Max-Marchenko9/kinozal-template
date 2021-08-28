@@ -13,3 +13,26 @@
     width: 100%;
   }
 }
+.site-news-item {
+  clear: both;
+
+  &__image {
+    float: left;
+    width: 75px;
+    margin: 0 10px 10px 0;
+
+    img {
+      width: 100%;
+    }
+  }
+  &__title {
+    a {
+      @include block-shortener(1rem, 1.5, 50px, 2);
+    }
+  }
+  &__date {
+    font-size: 0.8rem;
+    text-align: right;
+    color: darken($color-gray, 30%);
+  }
+}
