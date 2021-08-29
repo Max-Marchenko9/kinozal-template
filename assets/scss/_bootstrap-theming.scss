@@ -61,15 +61,17 @@
 .panel {
   &-info {
     margin-bottom: $gap * 2;
-  
+
     border: none;
     background-color: darken($color-light, 7%);
 
     > .panel-heading {
       letter-spacing: 0.1em;
+
       color: $color-light;
       border-color: none;
       background-color: $color-accent;
+
       font-size: 1.2rem;
     }
   }
@@ -91,13 +93,15 @@
     position: absolute;
     top: 0;
     right: $gap / 3 * 2;
+
     border: none;
 
     a {
-      background-color: transparent !important;
-      border: none !important;
-      color: $color-gray;
       padding: 14px 5px 11px !important;
+
+      color: $color-gray;
+      border: none !important;
+      background-color: transparent !important;
 
       &:hover,
       &:focus {
