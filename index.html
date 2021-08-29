@@ -65,20 +65,204 @@
   <div class="container">
     <div class="row">
       <div class=" main col-lg-9 col-lg-push-3 col-md-8 col-md-push-4">
-        <h1>Новые фильмы</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, dignissimos omnis aliquam iusto odio
-          sapiente voluptatem aperiam laboriosam modi dicta totam nisi sed officia earum voluptatibus repellendus
-          labore. Labore iste alias natus sed eaque voluptas aspernatur, voluptatibus autem, fugit debitis harum, animi
-          numquam reprehenderit! Harum suscipit enim, amet unde aliquid quia voluptatibus fugiat dolore sit perferendis
-          sapiente sed esse illum autem officia eveniet nisi neque quisquam ex quam! Nesciunt laboriosam in labore ipsam
-          veniam quibusdam quae earum maiores delectus pariatur voluptates consectetur, suscipit fuga repudiandae?
-          Eligendi neque totam voluptatem, minus ullam suscipit quisquam eius veniam, numquam, et soluta dolor
-          necessitatibus.</p>
+
+        <section class="site-search panel panel-info hidden-lg hidden-lg">
+          <div class="panel-heading">Поиск</div>
+          <div class="panel-body">
+            <form action="search">
+              <div class="input-group input-group-lg">
+                <input class="form-control" type="search" placeholder="Поиск по сайту">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <section class="user-login panel panel-info hidden-lg hidden-lg">
+          <div class="panel-heading">Пользователь</div>
+          <div class="panel-body">
+
+            <ul class="user-login__tabs nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#user-login-main" aria-controls="user-login-main"
+                  role="tab" data-toggle="tab">
+                  <span class="glyphicon glyphicon-log-in"></span>
+                </a></li>
+              <li role="presentation"><a href="#user-registration-main" aria-controls="user-registration-main"
+                  role="tab" data-toggle="tab">
+                  <span class="glyphicon glyphicon-user"></span>
+                </a></li>
+            </ul>
+
+            <div class="user-login__content tab-content">
+
+              <div role="tabpanel" class="tab-pane fade in active" id="user-login-main">
+                <form action="login">
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="text" placeholder="Логин">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="password" placeholder="Пароль">
+                  </div>
+                  <button class="btn btn-default btn-block btn-lg" type="submit">Вход</button>
+                </form>
+              </div>
+
+              <div role="tabpanel" class="tab-pane fade" id="user-registration-main">
+                <form action="registration">
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="text" placeholder="Логин">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="password" placeholder="Пароль">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="email" placeholder="Email">
+                  </div>
+                  <button class="btn btn-default btn-block btn-lg" type="submit">Регистрация</button>
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <section class="new-films">
+          <h1 class="new-films-title">Новые фильмы</h1>
+          <div class="new-films-row row">
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item__thumbnail thumbnail">
+                <a href="">
+                  <img class="new-films-item__image" src="assets/img/films/1381061.jpg" alt="Выхода нет">
+                <div class="new-films-item__caption caption">
+                  <h3 class="new-films-item__title">Выхода нет</h3>
+                </div>
+                </a>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item__thumbnail thumbnail">
+                <a href="">
+                  <img class="new-films-item__image" src="assets/img/films/1381061.jpg" alt="Выхода нет">
+                <div class="new-films-item__caption caption">
+                  <h3 class="new-films-item__title">Выхода нет</h3>
+                </div>
+                </a>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item__thumbnail thumbnail">
+                <a href="">
+                  <img class="new-films-item__image" src="assets/img/films/1381061.jpg" alt="Выхода нет">
+                <div class="new-films-item__caption caption">
+                  <h3 class="new-films-item__title">Выхода нет</h3>
+                </div>
+                </a>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item__thumbnail thumbnail">
+                <a href="">
+                  <img class="new-films-item__image" src="assets/img/films/1381061.jpg" alt="Выхода нет">
+                <div class="new-films-item__caption caption">
+                  <h3 class="new-films-item__title">Выхода нет</h3>
+                </div>
+                </a>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item__thumbnail thumbnail">
+                <a href="">
+                  <img class="new-films-item__image" src="assets/img/films/1381061.jpg" alt="Выхода нет">
+                <div class="new-films-item__caption caption">
+                  <h3 class="new-films-item__title">Выхода нет</h3>
+                </div>
+                </a>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item__thumbnail thumbnail">
+                <a href="">
+                  <img class="new-films-item__image" src="assets/img/films/1381061.jpg" alt="Выхода нет">
+                <div class="new-films-item__caption caption">
+                  <h3 class="new-films-item__title">Выхода нет</h3>
+                </div>
+                </a>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item__thumbnail thumbnail">
+                <a href="">
+                  <img class="new-films-item__image" src="assets/img/films/1381061.jpg" alt="Выхода нет">
+                <div class="new-films-item__caption caption">
+                  <h3 class="new-films-item__title">Выхода нет</h3>
+                </div>
+                </a>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item__thumbnail thumbnail">
+                <a href="">
+                  <img class="new-films-item__image" src="assets/img/films/1381061.jpg" alt="Выхода нет">
+                <div class="new-films-item__caption caption">
+                  <h3 class="new-films-item__title">Выхода нет</h3>
+                </div>
+                </a>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item__thumbnail thumbnail">
+                <a href="">
+                  <img class="new-films-item__image" src="assets/img/films/1381061.jpg" alt="Выхода нет">
+                <div class="new-films-item__caption caption">
+                  <h3 class="new-films-item__title">Выхода нет</h3>
+                </div>
+                </a>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item__thumbnail thumbnail">
+                <a href="">
+                  <img class="new-films-item__image" src="assets/img/films/1381061.jpg" alt="Выхода нет">
+                <div class="new-films-item__caption caption">
+                  <h3 class="new-films-item__title">Выхода нет</h3>
+                </div>
+                </a>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item__thumbnail thumbnail">
+                <a href="">
+                  <img class="new-films-item__image" src="assets/img/films/1381061.jpg" alt="Выхода нет">
+                <div class="new-films-item__caption caption">
+                  <h3 class="new-films-item__title">Выхода нет</h3>
+                </div>
+                </a>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item__thumbnail thumbnail">
+                <a href="">
+                  <img class="new-films-item__image" src="assets/img/films/1381061.jpg" alt="Выхода нет">
+                <div class="new-films-item__caption caption">
+                  <h3 class="new-films-item__title">Выхода нет</h3>
+                </div>
+                </a>
+              </div>
+            </article>
+          </div>
+        </section>
+        
+        <!-- <section></section> -->
+
       </div>
       <div class="left-sidebar col-lg-3 col-lg-pull-9 col-md-4 col-md-pull-8">
 
 
-        <div class="vertical-slider panel panel-info">
+        <div class="vertical-slider panel panel-info visible-lg visi">
           <div id="vertical-carousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -114,7 +298,7 @@
         </div>
 
 
-        <div class="site-search panel panel-info">
+        <div class="site-search panel panel-info visible-lg visi">
           <div class="panel-heading">Поиск</div>
           <div class="panel-body">
             <form action="search">
@@ -130,7 +314,7 @@
           </div>
         </div>
 
-        <div class="user-login panel panel-info">
+        <div class="user-login panel panel-info visible-lg visi">
           <div class="panel-heading">Пользователь</div>
           <div class="panel-body">
 
