@@ -8,7 +8,8 @@
     margin-bottom: $gap * 4;
   }
 }
-.new-films {
+.new-films,
+.top-week {
   &-row {
     margin-right: -$gap / 2;
     margin-bottom: -$gap;
@@ -26,5 +27,22 @@
     &__title {
       @include text-shortener;
     }
+  }
+}
+.film-news {
+  &:hover {
+    .thumbnail {
+      border-color: $color-accent;
+      background-color: $color-accent;
+    }
+    h3 > a {
+      color: $color-accent;
+    }
+    .btn-warning {
+      background-color: $color-accent;
+    }
+  }
+  h3 > a {
+    transition: color 0.25s;
   }
 }
