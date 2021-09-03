@@ -1,0 +1,31 @@
+.footer {
+    height: 266px;
+    background-color: $color-dark;
+    padding-top: 45px;
+    color: $color-gray;
+  
+    ul {
+        padding: 0;
+        list-style: none;
+    }
+    a {
+        display: block;
+        color: #6f6f6f;
+        padding: 0;
+        
+        &:hover {
+            color: $color-light;
+        }
+    }
+    &-bottom {
+            font-weight: bold;
+            margin: 20px 0;
+          
+            text-align: center;
+          
+            a {
+              color: $color-gray;
+            }
+          }
+    
+  }

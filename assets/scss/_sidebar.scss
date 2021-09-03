@@ -18,6 +18,7 @@ $image-size: 75px;
 $image-size-with-padding: $image-size + 10px;
 
 .site-news-item {
+
   position: relative;
 
   clear: both;
@@ -29,7 +30,7 @@ $image-size-with-padding: $image-size + 10px;
     &::after {
       position: absolute;
       right: 0;
-      bottom: -4px;
+      bottom: -5px;
 
       width: calc(100% - #{$image-size-with-padding});
       height: 1px;
@@ -68,6 +69,10 @@ $image-size-with-padding: $image-size + 10px;
 }
 .list-group-item {
   margin-bottom: 0;
+  padding-top: 9px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-left: 15px;
 }
 .top-films {
   &__body {

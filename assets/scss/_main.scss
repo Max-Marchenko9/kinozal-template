@@ -1,5 +1,5 @@
 .main {
-  @extend %margin-bottom-lg;
+  margin-bottom: 69px;
 
   .site-search {
     margin-bottom: $gap * 3;
@@ -10,6 +10,9 @@
 }
 .new-films,
 .top-week {
+
+  margin-bottom: 74px;
+
   &-row {
     margin-right: -$gap / 2;
     margin-bottom: -$gap;
@@ -26,6 +29,11 @@
 
     &__title {
       @include text-shortener;
+      margin-top: 0;
+      margin-bottom: 0;
+      text-align: center;
+      font-size: 1rem;
+      font-weight: bold;
     }
   }
 }
@@ -44,5 +52,78 @@
   }
   h3 > a {
     transition: color 0.25s;
+  }
+}
+.top-week {
+margin-bottom: 75px;
+  h2 {
+   position: relative;
+   font-family: $font-header;
+   font-size: 2.5rem;
+   margin-left: $gap * 3;
+   margin-bottom: ($gap * 3) - 1px;
+
+   &::before {
+     content: '';
+     position: absolute;
+     top: 21%;
+     left: -5.6%;
+     width: 30px;
+     height: 3px;
+     background-color: $color-border-accent;
+   }
+
+   &::after {
+     content: '';
+     position: absolute;
+     right: 0.1%;
+     bottom: 16%;
+     width: 507px;
+     height: 3px;
+     background-color: $color-border-accent;
+ }
+}
+}
+.news-movie {
+
+  h2 {
+  //  margin-top: 23px;
+   position: relative;
+   font-family: $font-header;
+   font-size: 2.5rem;
+   margin-left: $gap * 3;
+   margin-bottom: ($gap * 3) - 1px;
+
+   &::before {
+     content: '';
+     position: absolute;
+     top: 22%;
+     left: -5.6%;
+     width: 30px;
+     height: 3px;
+     background-color: $color-border-accent;
+   }
+
+   &::after {
+     content: '';
+     position: absolute;
+     right: 0.1%;
+     bottom: 16%;
+     width: 507px;
+     height: 3px;
+     background-color: $color-border-accent;
+ }
+}
+}
+.film-news {
+  
+  // a {
+  //   // letter-spacing: 0.0000005em;
+  // }
+  &-item {
+    &__button {
+      float: right;
+      margin-bottom: 30px;
+    }
   }
 }

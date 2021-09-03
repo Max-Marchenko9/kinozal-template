@@ -21,11 +21,22 @@ a {
 }
 
 h1 {
-  //TODO: потом исправить на правильный отступ
-  margin-top: -6px;
-
+  margin-top: -7px;
   font-family: $font-header;
   font-size: 3rem;
+  margin-bottom: $gap * 3;
+
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0.1%;
+    bottom: 18%;
+    width: 487px;
+    height: 3px;
+    background-color: $color-border-accent;
+  }
 }
 
 

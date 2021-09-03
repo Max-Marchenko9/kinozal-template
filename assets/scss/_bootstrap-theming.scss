@@ -1,11 +1,13 @@
 .navbar-inverse {
   margin-bottom: 0;
-
+  
+  height: 62px;
   background-color: darken($color-dark, 4%);
 
   .navbar-nav {
     > li > a {
       transition: background-color 0.5s;
+      margin-top: -2px;
 
       @include sm-min {
         border-radius: 4px;
@@ -59,6 +61,7 @@
   margin-right: 0;
 }
 .panel {
+
   &-info {
     margin-bottom: $gap * 2;
 
@@ -67,11 +70,11 @@
 
     > .panel-heading {
       letter-spacing: 0.1em;
-
+      padding-left: 14px;
       color: $color-light;
       border-color: none;
       background-color: $color-accent;
-
+      border-bottom: none;
       font-size: 1.2rem;
     }
   }
@@ -88,6 +91,7 @@
 }
 .user-login {
   position: relative;
+  // margin-bottom: ($gap * 2) - 1px;
 
   &__tabs {
     position: absolute;

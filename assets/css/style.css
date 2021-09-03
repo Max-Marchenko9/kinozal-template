@@ -1,4 +1,4 @@
-.header, .main, .left-sidebar {
+.left-sidebar {
   margin-bottom: 80.0px;
 }
 
@@ -8,6 +8,7 @@
 
 .navbar-inverse {
   margin-bottom: 0;
+  height: 62px;
   background-color: #191919;
 }
 
@@ -15,6 +16,7 @@
   -webkit-transition: background-color 0.5s;
   -o-transition: background-color 0.5s;
   transition: background-color 0.5s;
+  margin-top: -2px;
 }
 
 .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
@@ -46,9 +48,11 @@
 
 .panel-info > .panel-heading {
   letter-spacing: 0.1em;
+  padding-left: 14px;
   color: #ffffff;
   border-color: none;
   background-color: #df8a13;
+  border-bottom: none;
   font-size: 1.2rem;
 }
 
@@ -108,14 +112,31 @@ a:hover, a:focus {
 }
 
 h1 {
-  margin-top: -6px;
+  margin-top: -7px;
   font-family: "PT Serif", serif;
   font-size: 3rem;
+  margin-bottom: 45px;
+  position: relative;
+}
+
+h1::after {
+  content: '';
+  position: absolute;
+  right: 0.1%;
+  bottom: 18%;
+  width: 487px;
+  height: 3px;
+  background-color: #F5C585;
+}
+
+.header {
+  margin-bottom: 79px;
 }
 
 .header-logo {
-  padding: 100px 0;
+  padding: 98px 0px 100px 0px;
   text-align: center;
+  height: 306px;
   background-color: #232323;
   background-image: url(../img/header-bg.jpg);
   background-position: center;
@@ -131,9 +152,14 @@ h1 {
 
 .header-logo__description {
   display: block;
+  margin-top: 1px;
   letter-spacing: 0.2em;
   color: #ffffff;
   font-size: 1.15rem;
+}
+
+.main {
+  margin-bottom: 69px;
 }
 
 .main .site-search {
@@ -142,6 +168,11 @@ h1 {
 
 .main .user-login {
   margin-bottom: 60px;
+}
+
+.new-films,
+.top-week {
+  margin-bottom: 74px;
 }
 
 .new-films-row,
@@ -170,6 +201,11 @@ h1 {
   white-space: nowrap;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .film-news:hover .thumbnail {
@@ -189,6 +225,71 @@ h1 {
   -webkit-transition: color 0.25s;
   -o-transition: color 0.25s;
   transition: color 0.25s;
+}
+
+.top-week {
+  margin-bottom: 75px;
+}
+
+.top-week h2 {
+  position: relative;
+  font-family: "PT Serif", serif;
+  font-size: 2.5rem;
+  margin-left: 45px;
+  margin-bottom: 44px;
+}
+
+.top-week h2::before {
+  content: '';
+  position: absolute;
+  top: 21%;
+  left: -5.6%;
+  width: 30px;
+  height: 3px;
+  background-color: #F5C585;
+}
+
+.top-week h2::after {
+  content: '';
+  position: absolute;
+  right: 0.1%;
+  bottom: 16%;
+  width: 507px;
+  height: 3px;
+  background-color: #F5C585;
+}
+
+.news-movie h2 {
+  position: relative;
+  font-family: "PT Serif", serif;
+  font-size: 2.5rem;
+  margin-left: 45px;
+  margin-bottom: 44px;
+}
+
+.news-movie h2::before {
+  content: '';
+  position: absolute;
+  top: 22%;
+  left: -5.6%;
+  width: 30px;
+  height: 3px;
+  background-color: #F5C585;
+}
+
+.news-movie h2::after {
+  content: '';
+  position: absolute;
+  right: 0.1%;
+  bottom: 16%;
+  width: 507px;
+  height: 3px;
+  background-color: #F5C585;
+}
+
+.film-news-item__button {
+  float: right;
+  margin-bottom: 30px;
 }
 
 .left-sidebar .panel:last-of-type {
@@ -217,7 +318,7 @@ h1 {
 .site-news-item:not(:last-of-type)::after {
   position: absolute;
   right: 0;
-  bottom: -4px;
+  bottom: -5px;
   width: calc(100% - 85px);
   height: 1px;
   content: "";
@@ -256,6 +357,10 @@ h1 {
 
 .list-group-item {
   margin-bottom: 0;
+  padding-top: 9px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-left: 15px;
 }
 
 .top-films__body {
@@ -302,6 +407,38 @@ h1 {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.footer {
+  height: 266px;
+  background-color: #232323;
+  padding-top: 45px;
+  color: #dddddd;
+}
+
+.footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer a {
+  display: block;
+  color: #6f6f6f;
+  padding: 0;
+}
+
+.footer a:hover {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  font-weight: bold;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom a {
+  color: #dddddd;
 }
 
 @media (min-width: 576px) {
