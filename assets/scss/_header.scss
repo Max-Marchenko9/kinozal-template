@@ -3,16 +3,19 @@
 }
 
 .header-logo {
-  padding: 98px 0px 100px 0px;
+  height: 306px;
+  padding: 98px 0 100px 0;
 
   text-align: center;
 
-  height: 306px;
   background-color: $color-dark;
   background-image: url(../img/header-bg.jpg);
   background-position: center;
   background-size: cover;
 
+  @include md {
+    height: 304px;
+  }
   &__title {
     display: block;
 
@@ -22,6 +25,10 @@
     font-size: 3.5rem;
 
     @extend %text-shadow;
+    @include lg-md {
+      margin-top: 3px;
+      margin-right: -4px;
+    }
     @include xs-min {
       margin-right: -0.2777em;
 
@@ -37,7 +44,9 @@
   }
   &__description {
     display: block;
+
     margin-top: 1px;
+
     letter-spacing: 0.2em;
 
     color: $color-light;
@@ -45,5 +54,11 @@
     font-size: 1.15rem;
 
     @extend %text-shadow;
+    @include lg {
+      margin-left: -12px;
+    }
+    @include md {
+      margin-left: -2px;
+    }
   }
 }

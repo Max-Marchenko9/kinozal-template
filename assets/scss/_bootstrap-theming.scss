@@ -1,14 +1,23 @@
 .navbar-inverse {
-  margin-bottom: 0;
-  
   height: 62px;
+  margin-bottom: 0;
+
   background-color: darken($color-dark, 4%);
+
+  @include md {
+    height: 61px;
+  }
 
   .navbar-nav {
     > li > a {
       transition: background-color 0.5s;
-      margin-top: -2px;
 
+      @include lg-min {
+        margin-top: -2px;
+      }
+      @include lg {
+        margin-bottom: 0;
+      }
       @include sm-min {
         border-radius: 4px;
       }
@@ -33,9 +42,19 @@
 }
 
 .navbar-left {
-  @include sm-min {
+  @include lg-min {
     > li {
       margin: 5px 5px 5px 0;
+    }
+  }
+  @include lg {
+    @include md {
+      > li {
+        margin: 5px 6.5px 5px -1px;
+      }
+    }
+    > li {
+      margin: 5px 10px 5px -5px;
     }
   }
   @include sm {
@@ -43,7 +62,17 @@
   }
 }
 .navbar-right {
-  @include sm-min {
+  @include lg-min {
+    > li {
+      margin: 5px 0 5px 5px;
+    }
+  }
+  @include lg {
+    > li {
+      margin: 5px 5px 5px 0;
+    }
+  }
+  @include md {
     > li {
       margin: 5px 0 5px 5px;
     }
@@ -61,7 +90,6 @@
   margin-right: 0;
 }
 .panel {
-
   &-info {
     margin-bottom: $gap * 2;
 
@@ -69,12 +97,15 @@
     background-color: darken($color-light, 7%);
 
     > .panel-heading {
-      letter-spacing: 0.1em;
       padding-left: 14px;
+
+      letter-spacing: 0.1em;
+
       color: $color-light;
       border-color: none;
-      background-color: $color-accent;
       border-bottom: none;
+      background-color: $color-accent;
+
       font-size: 1.2rem;
     }
   }
@@ -117,4 +148,7 @@
       color: $color-light !important;
     }
   }
+}
+.glyphicon:hover {
+  color: #ffffff !important;
 }

@@ -10,8 +10,14 @@
 }
 .new-films,
 .top-week {
-
   margin-bottom: 74px;
+
+  @include lg {
+    margin-bottom: 72px;
+  }
+  // @include md {
+  //   height: 337px;
+  // }
 
   &-row {
     margin-right: -$gap / 2;
@@ -23,17 +29,35 @@
     padding-right: $gap / 2;
     padding-left: $gap / 2;
 
+    & img {
+      width: 100%;
+      height: auto;
+    }
+
+    &:hover {
+      .thumbnail {
+        border-color: $color-accent;
+        background-color: $color-accent;
+      }
+      h3 {
+        color: #ffffff;
+      }
+    }
+
     &__thumbnail {
       margin-bottom: 0;
     }
 
     &__title {
-      @include text-shortener;
       margin-top: 0;
       margin-bottom: 0;
+
       text-align: center;
+
       font-size: 1rem;
       font-weight: bold;
+
+      @include text-shortener;
     }
   }
 }
@@ -55,74 +79,126 @@
   }
 }
 .top-week {
-margin-bottom: 75px;
+  margin-bottom: 75px;
+
+  @include md {
+    margin-bottom: 75px;
+  }
   h2 {
-   position: relative;
-   font-family: $font-header;
-   font-size: 2.5rem;
-   margin-left: $gap * 3;
-   margin-bottom: ($gap * 3) - 1px;
+    position: relative;
 
-   &::before {
-     content: '';
-     position: absolute;
-     top: 21%;
-     left: -5.6%;
-     width: 30px;
-     height: 3px;
-     background-color: $color-border-accent;
-   }
+    margin-bottom: ($gap * 3) - 1px;
+    margin-left: $gap * 3;
 
-   &::after {
-     content: '';
-     position: absolute;
-     right: 0.1%;
-     bottom: 16%;
-     width: 507px;
-     height: 3px;
-     background-color: $color-border-accent;
- }
-}
+    font-family: $font-header;
+    font-size: 2.5rem;
+
+    @include md {
+      margin-top: 75px;
+      margin-bottom: 44px;
+    }
+
+    &::before {
+      position: absolute;
+      top: 21%;
+      left: -5.6%;
+
+      width: 30px;
+      height: 3px;
+
+      content: "";
+
+      background-color: $color-border-accent;
+
+      @include lg {
+        left: -7.9%;
+      }
+      @include md {
+        left: -6.7%;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      right: 0.1%;
+      bottom: 16%;
+
+      width: 507px;
+      height: 3px;
+
+      content: "";
+
+      background-color: $color-border-accent;
+
+      @include lg {
+        width: 276.5px;
+      }
+      @include lg {
+        width: 380px;
+      }
+    }
+  }
 }
 .news-movie {
-
   h2 {
-  //  margin-top: 23px;
-   position: relative;
-   font-family: $font-header;
-   font-size: 2.5rem;
-   margin-left: $gap * 3;
-   margin-bottom: ($gap * 3) - 1px;
+    //  margin-top: 23px;
+    position: relative;
 
-   &::before {
-     content: '';
-     position: absolute;
-     top: 22%;
-     left: -5.6%;
-     width: 30px;
-     height: 3px;
-     background-color: $color-border-accent;
-   }
+    margin-bottom: ($gap * 3) - 1px;
+    margin-left: $gap * 3;
 
-   &::after {
-     content: '';
-     position: absolute;
-     right: 0.1%;
-     bottom: 16%;
-     width: 507px;
-     height: 3px;
-     background-color: $color-border-accent;
- }
-}
+    font-family: $font-header;
+    font-size: 2.5rem;
+
+    &::before {
+      position: absolute;
+      top: 22%;
+      left: -5.6%;
+
+      width: 30px;
+      height: 3px;
+
+      content: "";
+
+      background-color: $color-border-accent;
+
+      @include lg {
+        left: -7.9%;
+      }
+      @include md {
+        left: -6.5%;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      right: 0.1%;
+      bottom: 16%;
+
+      width: 507px;
+      height: 3px;
+
+      content: "";
+
+      background-color: $color-border-accent;
+
+      @include lg {
+        width: 276.5px;
+      }
+      @include md {
+        width: 379px;
+      }
+    }
+  }
 }
 .film-news {
-  
   // a {
   //   // letter-spacing: 0.0000005em;
   // }
   &-item {
     &__button {
       float: right;
+
       margin-bottom: 30px;
     }
   }
