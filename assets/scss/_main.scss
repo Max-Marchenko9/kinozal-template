@@ -3,20 +3,28 @@
 
   .site-search {
     margin-bottom: $gap * 3;
+
+    @include md-sm {
+      margin-bottom: ($gap * 3) - 1px;
+    }
   }
   .user-login {
     margin-bottom: $gap * 4;
+
+    @include sm {
+      margin-bottom: ($gap * 4) - 1px;
+    }
   }
 }
 .new-films,
 .top-week {
   margin-bottom: 74px;
-
+  
   @include lg {
     margin-bottom: 72px;
   }
-  // @include md {
-  //   height: 337px;
+  // @include lg-md {
+  //   max-height: 337px;
   // }
 
   &-row {
@@ -28,6 +36,16 @@
     margin-bottom: $gap;
     padding-right: $gap / 2;
     padding-left: $gap / 2;
+    
+    // @include lg-md {
+    //   min-height: 386px;
+    // }
+    @include md {
+      max-height: 386px;
+    }
+    @include sm {
+      max-height: 386px;
+    }
 
     & img {
       width: 100%;
@@ -74,6 +92,9 @@
       background-color: $color-accent;
     }
   }
+  .thumbnail {
+    margin-bottom: 0px;
+  }
   h3 > a {
     transition: color 0.25s;
   }
@@ -81,7 +102,10 @@
 .top-week {
   margin-bottom: 75px;
 
-  @include md {
+  @include md-sm {
+    margin-bottom: 78px;
+  }
+  @include sm {
     margin-bottom: 75px;
   }
   h2 {
@@ -93,9 +117,17 @@
     font-family: $font-header;
     font-size: 2.5rem;
 
+    @include lg-md {
+      margin-top: 75px;
+      margin-bottom: 46px;
+    }
     @include md {
       margin-top: 75px;
       margin-bottom: 44px;
+    }
+    @include sm {
+      margin-left: ($gap * 3) - 1px;
+      margin-bottom: ($gap * 3) + 1px;
     }
 
     &::before {
@@ -115,6 +147,10 @@
       }
       @include md {
         left: -6.7%;
+        top: 23.5%;
+      }
+      @include sm {
+        left: -9.1%;
       }
     }
 
@@ -133,8 +169,13 @@
       @include lg {
         width: 276.5px;
       }
-      @include lg {
+      @include md {
         width: 380px;
+        bottom: 15%;
+      }
+      @include sm {
+        width: 190px;
+        right: 3.5%;
       }
     }
   }
@@ -163,10 +204,14 @@
       background-color: $color-border-accent;
 
       @include lg {
+        top: 23%;
         left: -7.9%;
       }
       @include md {
         left: -6.5%;
+      }
+      @include sm {
+        left: -9.1%;
       }
     }
 
@@ -188,6 +233,10 @@
       @include md {
         width: 379px;
       }
+      @include sm {
+        width: 227px;
+        right: 0%;
+      }
     }
   }
 }
@@ -201,5 +250,10 @@
 
       margin-bottom: 30px;
     }
+  }
+}
+.user-login__tabs a {
+  @include sm {
+    padding: 14px 0px 11px 10px!important;
   }
 }

@@ -23,15 +23,27 @@ a {
 h1 {
   position: relative;
 
-  margin-top: -7px;
+  margin-top: -7px;  //не забыть исправить!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   margin-bottom: $gap * 3;
 
   font-family: $font-header;
   font-size: 3rem;
 
-  @include md {
-    margin-bottom: ($gap * 3) - 3px;
+  @include lg-md {
+    // margin-bottom: ($gap * 3) + 5px;
+    // margin-bottom: 100px;
   }
+  @include md {
+    margin-bottom: ($gap * 3) - 1px;
+  }
+  @include sm {
+    margin-bottom: ($gap * 3) - 1px;
+  }
+  // @include sm {
+  //   margin-left: -1px;
+  // }
+  
+
   &::after {
     position: absolute;
     right: 0.1%;
@@ -47,8 +59,12 @@ h1 {
     @include lg {
       width: 256.5px;
     }
-    @include lg {
+    @include md {
       width: 360px;
+    }
+    @include sm {
+      width: 185px;
+      right: 0.6%;
     }
   }
 }

@@ -5,9 +5,16 @@
   color: $color-gray;
   background-color: $color-dark;
 
+  
   @include md {
     min-height: 422px;
     padding-top: 46px;
+  }
+  @include md-sm {
+    // line-height: 22.3px;
+  }
+  @include sm {
+    max-height: 422px;
   }
 
   h4 {
@@ -39,16 +46,21 @@
     font-weight: bold;
 
     @include lg {
-      margin-top: 18px;
+      margin-top: 21px;
       margin-left: 2px;
 
       letter-spacing: 0.004em;
     }
     @include md {
-      margin-top: 18px;
+      margin-top: 20px;
       margin-left: 1px;
 
       letter-spacing: 0.004em;
+    }
+    @include sm {
+      margin-top: 20px;
+      margin-left: 1px;
+      // letter-spacing: 0.004em;
     }
 
     a {
@@ -56,8 +68,18 @@
     }
   }
 }
-// .footer-main:nth-of-type(3) {
-//     margin-top: -20px;
-// }.footer-main:nth-of-type(4) {
-//     margin-top: 8px;
+// @include md-sm {
+//   .footer-main:nth-of-type(3) {
+//     @include md-sm {
+//       margin-top: 8px;
+//     }
+//   }
+  
+// }
+// @include md-sm {
+//   .footer-main:nth-of-type(4) {
+//     @include md-sm {
+//       margin-top: 8px;
+//     }
+//   }
 // }

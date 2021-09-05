@@ -7,6 +7,9 @@
   @include md {
     height: 61px;
   }
+  @include sm {
+    height: 51px;
+  }
 
   .navbar-nav {
     > li > a {
@@ -88,6 +91,10 @@
   float: none;
 
   margin-right: 0;
+  
+  @include sm {
+    margin-left: 6px;
+  } 
 }
 .panel {
   &-info {
@@ -107,12 +114,20 @@
       background-color: $color-accent;
 
       font-size: 1.2rem;
+
+      @include sm {
+       margin-top: 1px;  
+      }
     }
   }
 }
 .panel-body {
   border: 1px solid $color-gray;
   border-radius: 0 0 4px 4px;
+  
+  @include sm {
+    padding: 15px 10px 15px 15px;
+  }
 }
 .input {
   &-lg,

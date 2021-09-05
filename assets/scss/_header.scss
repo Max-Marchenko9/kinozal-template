@@ -1,5 +1,14 @@
 .header {
   margin-bottom: 79px;;
+  @include md {
+    margin-bottom: 80.5px;
+  }
+  @include sm {
+    margin-bottom: 80px;
+    // margin-left: 6px;
+    // margin-right: auto;
+    // margin-left: auto;
+  }
 }
 
 .header-logo {
@@ -29,6 +38,9 @@
       margin-top: 3px;
       margin-right: -4px;
     }
+    @include sm {
+      margin-left: 6px;
+    } 
     @include xs-min {
       margin-right: -0.2777em;
 
@@ -60,5 +72,8 @@
     @include md {
       margin-left: -2px;
     }
+    @include sm {
+      margin-left: 6px;
+    } 
   }
 }
