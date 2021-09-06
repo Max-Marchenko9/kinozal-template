@@ -82,7 +82,7 @@ $image-size-with-padding: $image-size + 10px;
 }
 .top-films {
   .panel-body {
-    padding-left: 0px;
+    padding-left: 0;
   }
   &__body {
     padding-right: 0;
@@ -151,8 +151,7 @@ $image-size-with-padding: $image-size + 10px;
 .user-login {
   @include sm {
     max-width: 540px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
-  
 }

@@ -30,7 +30,7 @@ h1 {
   font-size: 3rem;
 
   @include lg-md {
-    // margin-bottom: ($gap * 3) + 5px;
+    margin-bottom: ($gap * 3) + 2px;
     // margin-bottom: 100px;
   }
   @include md {
@@ -42,7 +42,7 @@ h1 {
   // @include sm {
   //   margin-left: -1px;
   // }
-  
+
 
   &::after {
     position: absolute;
@@ -59,12 +59,16 @@ h1 {
     @include lg {
       width: 256.5px;
     }
+    @include lg-md {
+      bottom: 16%;
+    }
     @include md {
       width: 360px;
     }
     @include sm {
-      width: 185px;
       right: 0.6%;
+
+      width: 185px;
     }
   }
 }

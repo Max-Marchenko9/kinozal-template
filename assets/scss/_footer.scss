@@ -5,14 +5,16 @@
   color: $color-gray;
   background-color: $color-dark;
 
-  
+  @include lg-min {
+    height: 266px;
+  }
   @include md {
     min-height: 422px;
     padding-top: 46px;
   }
-  @include md-sm {
-    // line-height: 22.3px;
-  }
+  // @include lg-md {
+  //   // line-height: 22.3px;
+  // }
   @include sm {
     max-height: 422px;
   }
@@ -45,6 +47,9 @@
 
     font-weight: bold;
 
+    @include lg-min {
+      margin-left: -2px;
+    }
     @include lg {
       margin-top: 21px;
       margin-left: 2px;
@@ -57,6 +62,9 @@
 
       letter-spacing: 0.004em;
     }
+    @include lg-md {
+      margin-top: 20px;
+    }
     @include sm {
       margin-top: 20px;
       margin-left: 1px;
@@ -68,18 +76,3 @@
     }
   }
 }
-// @include md-sm {
-//   .footer-main:nth-of-type(3) {
-//     @include md-sm {
-//       margin-top: 8px;
-//     }
-//   }
-  
-// }
-// @include md-sm {
-//   .footer-main:nth-of-type(4) {
-//     @include md-sm {
-//       margin-top: 8px;
-//     }
-//   }
-// }

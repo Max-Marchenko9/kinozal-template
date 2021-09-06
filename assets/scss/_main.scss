@@ -1,6 +1,12 @@
 .main {
   margin-bottom: 69px;
 
+  @include lg-min {
+    margin-bottom: ($gap * 5) + 8px;
+  }
+  @include lg-md {
+    margin-bottom: 81px;
+  }
   .site-search {
     margin-bottom: $gap * 3;
 
@@ -19,13 +25,13 @@
 .new-films,
 .top-week {
   margin-bottom: 74px;
-  
+
   @include lg {
     margin-bottom: 72px;
   }
-  // @include lg-md {
-  //   max-height: 337px;
-  // }
+  @include lg-md {
+    min-height: 292px;
+  }
 
   &-row {
     margin-right: -$gap / 2;
@@ -36,10 +42,11 @@
     margin-bottom: $gap;
     padding-right: $gap / 2;
     padding-left: $gap / 2;
-    
-    // @include lg-md {
-    //   min-height: 386px;
-    // }
+
+    @include lg-md {
+      margin-bottom: $gap - 0.5px;
+      // min-height: 386px;
+    }
     @include md {
       max-height: 386px;
     }
@@ -64,6 +71,9 @@
 
     &__thumbnail {
       margin-bottom: 0;
+      // @include lg-md {
+      //   height: 292px;
+      // }
     }
 
     &__title {
@@ -93,7 +103,7 @@
     }
   }
   .thumbnail {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
   h3 > a {
     transition: color 0.25s;
@@ -102,6 +112,9 @@
 .top-week {
   margin-bottom: 75px;
 
+  @include lg-md {
+    margin-bottom: 76px;
+  }
   @include md-sm {
     margin-bottom: 78px;
   }
@@ -119,15 +132,15 @@
 
     @include lg-md {
       margin-top: 75px;
-      margin-bottom: 46px;
+      margin-bottom: 45px;
     }
     @include md {
       margin-top: 75px;
       margin-bottom: 44px;
     }
     @include sm {
-      margin-left: ($gap * 3) - 1px;
       margin-bottom: ($gap * 3) + 1px;
+      margin-left: ($gap * 3) - 1px;
     }
 
     &::before {
@@ -146,8 +159,11 @@
         left: -7.9%;
       }
       @include md {
-        left: -6.7%;
         top: 23.5%;
+        left: -6.7%;
+      }
+      @include lg-md {
+        top: 23%;
       }
       @include sm {
         left: -9.1%;
@@ -170,12 +186,14 @@
         width: 276.5px;
       }
       @include md {
-        width: 380px;
         bottom: 15%;
+
+        width: 380px;
       }
       @include sm {
-        width: 190px;
         right: 3.5%;
+
+        width: 190px;
       }
     }
   }
@@ -190,7 +208,9 @@
 
     font-family: $font-header;
     font-size: 2.5rem;
-
+    // @include lg-md {
+    //   // margin-top: px;
+    // }
     &::before {
       position: absolute;
       top: 22%;
@@ -234,8 +254,9 @@
         width: 379px;
       }
       @include sm {
+        right: 0;
+
         width: 227px;
-        right: 0%;
       }
     }
   }
@@ -254,6 +275,6 @@
 }
 .user-login__tabs a {
   @include sm {
-    padding: 14px 0px 11px 10px!important;
+    padding: 14px 0 11px 10px!important;
   }
 }

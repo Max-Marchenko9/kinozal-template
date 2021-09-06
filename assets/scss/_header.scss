@@ -1,5 +1,9 @@
 .header {
-  margin-bottom: 79px;;
+  margin-bottom: 79px;
+
+  @include lg-md {
+    margin-bottom: 80px;
+  }
   @include md {
     margin-bottom: 80.5px;
   }
@@ -40,7 +44,7 @@
     }
     @include sm {
       margin-left: 6px;
-    } 
+    }
     @include xs-min {
       margin-right: -0.2777em;
 
@@ -74,6 +78,6 @@
     }
     @include sm {
       margin-left: 6px;
-    } 
+    }
   }
 }

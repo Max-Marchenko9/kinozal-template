@@ -4,6 +4,9 @@
 
   background-color: darken($color-dark, 4%);
 
+  @include lg-md {
+    height: 61px;
+  }
   @include md {
     height: 61px;
   }
@@ -91,10 +94,10 @@
   float: none;
 
   margin-right: 0;
-  
+
   @include sm {
     margin-left: 6px;
-  } 
+  }
 }
 .panel {
   &-info {
@@ -116,7 +119,7 @@
       font-size: 1.2rem;
 
       @include sm {
-       margin-top: 1px;  
+        margin-top: 1px;
       }
     }
   }
@@ -124,7 +127,7 @@
 .panel-body {
   border: 1px solid $color-gray;
   border-radius: 0 0 4px 4px;
-  
+
   @include sm {
     padding: 15px 10px 15px 15px;
   }
