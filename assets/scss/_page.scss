@@ -1,12 +1,27 @@
 .film-info {
+  // margin-bottom: $gap * 5.333333;
+  @extend %margin-bottom-lg;
   font-size: 1.2rem;
   &__title {
+    margin-bottom: 46px;
+    // margin-left: -2px;
     &::after {
       width: 416px !important;
+
+      @include lg-md {
+        width: 185px !important;
+        top: 77%;
+      }
     }
   }
   &__wrapper {
     white-space: nowrap;
+    
+    // @include lg-md {
+    //   padding-right: 2px;
+    //   padding-bottom: 2px;
+    // }
+      
     &:not(:last-of-type) {
       margin-right: $gap;
     }
@@ -14,6 +29,12 @@
   &__well {
     border-top-left-radius: none;
     border-top-right-radius: none;
+
+  //   @include lg-md {
+  //     margin-left: -2px;
+  // /* padding-bottom: 23px; */
+  //     margin-top: -2px;
+  //   }
   }
   &__badge {
     font-size: 0.8em;
@@ -21,8 +42,9 @@
 }
 .movie-description,
 .movie-reviews,
-.panel-info {
+.film-comment-form {
   position: relative;
+  
   &__title {
     &::before {
       position: absolute;
@@ -47,6 +69,133 @@
       content: "";
 
       background-color: $color-border-accent;
+    }
+  }
+}
+.movie-description {
+  @extend %margin-bottom-lg;
+  line-height: 1.45em;
+
+  @include  lg-md {
+    line-height: 1.4em;
+    margin-bottom: ($gap * 5.3333333) + 1px;
+  }
+  &__title {
+    margin-left: $gap * 3;
+    margin-bottom: ($gap * 3) - 1px;
+    
+    @include lg-md {
+      margin-left: ($gap * 3) - 2px;
+      margin-bottom: $gap * 3;
+    }
+    &::before {
+      top: 3.5%;
+
+      @include lg-md {
+        top: 2.7%;
+      }
+    }
+    &::after {
+      top: 12%;
+      width: 447px;
+
+      @include lg-md {
+        width: 216px;
+        top: 9.5%;
+      }
+    }
+  }
+  .well {
+    padding-bottom: $gap - 3px;
+    @include lg-md {
+      padding-bottom: $gap + 3px;
+    }
+  }
+}
+.movie-reviews {
+  margin-bottom: ($gap * 3) + 3px;
+  line-height: 1.45em;
+  padding-bottom: $gap - 3px;
+
+  @include lg-md {
+    line-height: 1.4em;
+  }
+  &__title {
+    margin-left: ($gap * 3) + 1px;
+    margin-bottom: ($gap * 3);
+
+    @include lg-md {
+      margin-left: ($gap * 3) - 2px;
+    }
+    &::before {
+      top: 2.1%;
+
+      @include lg-md {
+        top: 1.6%;
+      }
+    }
+    &::after {
+      top: 6.6%;
+      width: 452px;
+
+      @include lg-md {
+        top: 5.4%;
+      width: 222px;
+      }
+    }
+  }
+  .panel-heading {
+    height: 47px;
+    padding-top: 12px;
+    padding-left: $gap;
+  }
+  
+  .panel-body {
+    padding-bottom: $gap - 5px;
+    padding-left: 16px;
+
+    @include lg-md {
+      padding-left: $gap;
+      padding-bottom: $gap;
+    }
+  }
+}
+.film-comment-form {
+  &__title {
+    margin-left: ($gap * 3);
+    margin-bottom: ($gap * 3);
+
+    @include lg-md {
+      margin-left: ($gap * 3) - 2px;
+    }
+
+    &::before {
+      top: 2.6%;
+      left: -0.1%;
+
+      @include lg-md {
+        top: 2.3%;
+      }
+    }
+    &::after {
+      top: 8.2%;
+      width: 346px;
+      
+      @include lg-md {
+        top: 8%;
+        width: 118px;
+      }
+    }
+  }
+  &__button {
+    float: right;
+    border: none;
+    // padding-top: 12px;
+    // margin-right: 1px;
+
+    @include lg-md {
+      margin-right: 4px;
+      padding-top: 11px;
     }
   }
 }

@@ -1,4 +1,4 @@
-.left-sidebar {
+.film-info, .movie-description, .left-sidebar {
   margin-bottom: 80.0px;
 }
 
@@ -130,6 +130,11 @@ h1::after {
   height: 3px;
   content: "";
   background-color: #f5c585;
+}
+
+h2 {
+  font-family: "PT Serif", serif;
+  font-size: 2.5rem;
 }
 
 .header {
@@ -320,6 +325,10 @@ h1::after {
   font-size: 1.2rem;
 }
 
+.film-info__title {
+  margin-bottom: 46px;
+}
+
 .film-info__title::after {
   width: 416px !important;
 }
@@ -343,16 +352,16 @@ h1::after {
 
 .movie-description,
 .movie-reviews,
-.panel-info {
+.film-comment-form {
   position: relative;
 }
 
 .movie-description__title::before,
 .movie-reviews__title::before,
-.panel-info__title::before {
+.film-comment-form__title::before {
   position: absolute;
-  top: 0%;
-  left: 0%;
+  top: 0;
+  left: 0;
   width: 30px;
   height: 3px;
   content: "";
@@ -361,14 +370,87 @@ h1::after {
 
 .movie-description__title::after,
 .movie-reviews__title::after,
-.panel-info__title::after {
+.film-comment-form__title::after {
   position: absolute;
-  right: 0%;
-  bottom: 0%;
+  right: 0;
+  bottom: 0;
   width: 507px;
   height: 3px;
   content: "";
   background-color: #f5c585;
+}
+
+.movie-description {
+  line-height: 1.45em;
+}
+
+.movie-description__title {
+  margin-left: 45px;
+  margin-bottom: 44px;
+}
+
+.movie-description__title::before {
+  top: 3.5%;
+}
+
+.movie-description__title::after {
+  top: 12%;
+  width: 447px;
+}
+
+.movie-description .well {
+  padding-bottom: 12px;
+}
+
+.movie-reviews {
+  margin-bottom: 48px;
+  line-height: 1.45em;
+  padding-bottom: 12px;
+}
+
+.movie-reviews__title {
+  margin-left: 46px;
+  margin-bottom: 45px;
+}
+
+.movie-reviews__title::before {
+  top: 2.1%;
+}
+
+.movie-reviews__title::after {
+  top: 6.6%;
+  width: 452px;
+}
+
+.movie-reviews .panel-heading {
+  height: 47px;
+  padding-top: 12px;
+  padding-left: 15px;
+}
+
+.movie-reviews .panel-body {
+  padding-bottom: 10px;
+  padding-left: 16px;
+}
+
+.film-comment-form__title {
+  margin-left: 45px;
+  margin-bottom: 45px;
+}
+
+.film-comment-form__title::before {
+  top: 2.6%;
+  left: -0.1%;
+}
+
+.film-comment-form__title::after {
+  top: 8.2%;
+  width: 346px;
+}
+
+.film-comment-form__button {
+  float: right;
+  border: none;
 }
 
 .left-sidebar .panel:last-of-type {
@@ -657,6 +739,59 @@ h1::after {
   }
   .top-week h2::before {
     top: 23%;
+  }
+  .film-info__title::after {
+    width: 185px !important;
+    top: 77%;
+  }
+  .movie-description {
+    line-height: 1.4em;
+    margin-bottom: 81.0px;
+  }
+  .movie-description__title {
+    margin-left: 43px;
+    margin-bottom: 45px;
+  }
+  .movie-description__title::before {
+    top: 2.7%;
+  }
+  .movie-description__title::after {
+    width: 216px;
+    top: 9.5%;
+  }
+  .movie-description .well {
+    padding-bottom: 18px;
+  }
+  .movie-reviews {
+    line-height: 1.4em;
+  }
+  .movie-reviews__title {
+    margin-left: 43px;
+  }
+  .movie-reviews__title::before {
+    top: 1.6%;
+  }
+  .movie-reviews__title::after {
+    top: 5.4%;
+    width: 222px;
+  }
+  .movie-reviews .panel-body {
+    padding-left: 15px;
+    padding-bottom: 15px;
+  }
+  .film-comment-form__title {
+    margin-left: 43px;
+  }
+  .film-comment-form__title::before {
+    top: 2.3%;
+  }
+  .film-comment-form__title::after {
+    top: 8%;
+    width: 118px;
+  }
+  .film-comment-form__button {
+    margin-right: 4px;
+    padding-top: 11px;
   }
   .footer-bottom {
     margin-top: 20px;
