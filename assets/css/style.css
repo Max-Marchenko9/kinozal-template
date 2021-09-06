@@ -242,7 +242,7 @@ h1::after {
 }
 
 .film-news .thumbnail {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .film-news h3 > a {
@@ -314,6 +314,61 @@ h1::after {
 .film-news-item__button {
   float: right;
   margin-bottom: 30px;
+}
+
+.film-info {
+  font-size: 1.2rem;
+}
+
+.film-info__title::after {
+  width: 416px !important;
+}
+
+.film-info__wrapper {
+  white-space: nowrap;
+}
+
+.film-info__wrapper:not(:last-of-type) {
+  margin-right: 15px;
+}
+
+.film-info__well {
+  border-top-left-radius: none;
+  border-top-right-radius: none;
+}
+
+.film-info__badge {
+  font-size: 0.8em;
+}
+
+.movie-description,
+.movie-reviews,
+.panel-info {
+  position: relative;
+}
+
+.movie-description__title::before,
+.movie-reviews__title::before,
+.panel-info__title::before {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 30px;
+  height: 3px;
+  content: "";
+  background-color: #f5c585;
+}
+
+.movie-description__title::after,
+.movie-reviews__title::after,
+.panel-info__title::after {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  width: 507px;
+  height: 3px;
+  content: "";
+  background-color: #f5c585;
 }
 
 .left-sidebar .panel:last-of-type {
@@ -393,7 +448,7 @@ h1::after {
 }
 
 .top-films .panel-body {
-  padding-left: 0px;
+  padding-left: 0;
 }
 
 .top-films__body {
@@ -639,12 +694,12 @@ h1::after {
     margin-bottom: 44px;
   }
   .top-week h2::before {
-    left: -6.7%;
     top: 23.5%;
+    left: -6.7%;
   }
   .top-week h2::after {
-    width: 380px;
     bottom: 15%;
+    width: 380px;
   }
   .news-movie h2::before {
     left: -6.5%;
@@ -698,8 +753,8 @@ h1::after {
     margin-bottom: 44px;
   }
   h1::after {
-    width: 185px;
     right: 0.6%;
+    width: 185px;
   }
   .header {
     margin-bottom: 80px;
@@ -721,25 +776,25 @@ h1::after {
     margin-bottom: 75px;
   }
   .top-week h2 {
-    margin-left: 44px;
     margin-bottom: 46px;
+    margin-left: 44px;
   }
   .top-week h2::before {
     left: -9.1%;
   }
   .top-week h2::after {
-    width: 190px;
     right: 3.5%;
+    width: 190px;
   }
   .news-movie h2::before {
     left: -9.1%;
   }
   .news-movie h2::after {
+    right: 0;
     width: 227px;
-    right: 0%;
   }
   .user-login__tabs a {
-    padding: 14px 0px 11px 10px !important;
+    padding: 14px 0 11px 10px !important;
   }
   .left-sidebar {
     margin-bottom: 81.0px;
@@ -750,8 +805,8 @@ h1::after {
   .site-search,
   .user-login {
     max-width: 540px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
   .footer {
     max-height: 422px;

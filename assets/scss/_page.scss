@@ -1,0 +1,52 @@
+.film-info {
+  font-size: 1.2rem;
+  &__title {
+    &::after {
+      width: 416px !important;
+    }
+  }
+  &__wrapper {
+    white-space: nowrap;
+    &:not(:last-of-type) {
+      margin-right: $gap;
+    }
+  }
+  &__well {
+    border-top-left-radius: none;
+    border-top-right-radius: none;
+  }
+  &__badge {
+    font-size: 0.8em;
+  }
+}
+.movie-description,
+.movie-reviews,
+.panel-info {
+  position: relative;
+  &__title {
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 30px;
+      height: 3px;
+
+      content: "";
+
+      background-color: $color-border-accent;
+    }
+    &::after {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+
+      width: 507px;
+      height: 3px;
+
+      content: "";
+
+      background-color: $color-border-accent;
+    }
+  }
+}
