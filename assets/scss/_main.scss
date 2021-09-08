@@ -7,8 +7,11 @@
   @include lg-md {
     margin-bottom: 81px;
   }
+  @include md-sm {
+    margin-bottom: 83px;
+  }
   @include sm {
-    margin-bottom: 80px;
+    margin-bottom: 81px;
   }
   .site-search {
     margin-bottom: $gap * 3;
@@ -27,12 +30,12 @@
 }
 .new-films,
 .top-week {
-  margin-bottom: 74px;
+  margin-bottom: 39px;
 
   @include lg {
-    margin-bottom: 72px;
+    margin-bottom: 0;
   }
-  
+
 
   &-row {
     margin-right: -$gap / 2;
@@ -48,7 +51,7 @@
       margin-bottom: $gap - 0.5px;
       // min-height: 386px;
     }
-    
+
     // @include md {
     //   max-height: 386px;
     // }
@@ -112,20 +115,18 @@
   }
 }
 .top-week {
-  margin-bottom: 75px;
+  margin-bottom: 40px;
 
   @include lg-md {
-    margin-bottom: 76px;
+    margin-bottom: 38px;
   }
   @include md-sm {
-    margin-bottom: 76px;
+    margin-bottom: 40px;
   }
   @include sm {
-    margin-bottom: 75px;
+    margin-bottom: 40px;
   }
   h2 {
-    position: relative;
-
     margin-bottom: ($gap * 3) - 1px;
     margin-left: $gap * 3;
 
@@ -133,70 +134,17 @@
     font-size: 2.5rem;
 
     @include lg-md {
-      margin-top: 75px;
+      margin-top: 57px;
       margin-bottom: 45px;
     }
-    @include md {
-      margin-top: 75px;
+    @include md-sm {
+      margin-top: 57px;
       margin-bottom: 44px;
     }
     @include sm {
+      margin-top: 57px;
       margin-bottom: ($gap * 3) + 1px;
       margin-left: ($gap * 3) - 1px;
-    }
-
-    &::before {
-      position: absolute;
-      top: 21%;
-      left: -5.6%;
-
-      width: 30px;
-      height: 3px;
-
-      content: "";
-
-      background-color: $color-border-accent;
-
-      @include lg {
-        left: -7.9%;
-      }
-      @include md {
-        top: 23.5%;
-        left: -6.7%;
-      }
-      @include lg-md {
-        top: 23%;
-      }
-      @include sm {
-        left: -9.1%;
-      }
-    }
-
-    &::after {
-      position: absolute;
-      right: 0.1%;
-      bottom: 16%;
-
-      width: 507px;
-      height: 3px;
-
-      content: "";
-
-      background-color: $color-border-accent;
-
-      @include lg {
-        width: 276.5px;
-      }
-      @include md {
-        bottom: 15%;
-
-        width: 380px;
-      }
-      @include sm {
-        right: 3.5%;
-
-        width: 190px;
-      }
     }
   }
 }
@@ -206,63 +154,11 @@
   }
   h2 {
     //  margin-top: 23px;
-    position: relative;
-
     margin-bottom: ($gap * 3) - 1px;
     margin-left: $gap * 3;
 
     font-family: $font-header;
     font-size: 2.5rem;
-    
-    
-    &::before {
-      position: absolute;
-      top: 22%;
-      left: -5.6%;
-
-      width: 30px;
-      height: 3px;
-
-      content: "";
-
-      background-color: $color-border-accent;
-
-      @include lg {
-        top: 23%;
-        left: -7.9%;
-      }
-      @include md {
-        left: -6.5%;
-      }
-      @include sm {
-        left: -9.1%;
-      }
-    }
-
-    &::after {
-      position: absolute;
-      right: 0.1%;
-      bottom: 16%;
-
-      width: 507px;
-      height: 3px;
-
-      content: "";
-
-      background-color: $color-border-accent;
-
-      @include lg {
-        width: 276.5px;
-      }
-      @include md {
-        width: 379px;
-      }
-      @include sm {
-        right: 0;
-
-        width: 227px;
-      }
-    }
   }
 }
 .film-news {
@@ -274,6 +170,13 @@
       float: right;
 
       margin-bottom: 30px;
+
+      @include md-sm {
+        margin-bottom: 26px;
+      }
+      @include sm {
+        margin-bottom: 27px;
+      }
     }
     &__text {
       line-height: 1.4em;
@@ -285,6 +188,6 @@
     padding: 14px 0 11px 10px!important;
   }
 }
-.new-films {
-position: relative;
-}
+// .new-films {
+// position: relative;
+// }

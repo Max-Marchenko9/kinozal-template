@@ -5,6 +5,10 @@ html {
 }
 
 body {
+  overflow-x: hidden;
+
+  max-width: 100%;
+
   font-family: $font-main;
   font-size: $font-size;
 }
@@ -22,48 +26,32 @@ a {
 
 h1 {
   // position: relative;
-
-  // margin-top: -7px;  //не забыть исправить!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  // margin-bottom: $gap * 3;
-
-  // font-family: $font-header;
-  // font-size: 3rem;
-
-  // @include lg-md {
-  //   margin-bottom: ($gap * 3) + 2px;
-  //   // margin-bottom: 100px;
-  // }
-  // @include md {
-  //   margin-bottom: ($gap * 3) - 1px;
-  // }
-  // @include sm {
-  //   margin-bottom: ($gap * 3) - 1px; 
-  // }
+  margin-top: -9px; //не забыть исправить!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  margin-bottom: $gap * 3;
 
   font-family: $font-header;
 
+  @include lg-md {
+    margin-top: -7px;
+    margin-bottom: ($gap * 3) + 2px;
+    // margin-bottom: 100px;
+  }
+  @include md-sm {
+    margin-top: -7px;
+    margin-bottom: ($gap * 3) - 1px;
+  }
+  @include sm {
+    margin-bottom: ($gap * 3) - 1px;
+  }
   @include xs-min {
-    // margin: -($gap-md) 0 1em 0;
-
+    // margin: -(10px) 0 1em 0;
     font-size: 3rem;
   }
-  @include xs { 
-    margin: 0 0 1em;
-
+  @include xs {
+    // margin: 0 0 1em;
     font-size: 2rem;
+  }
   &::after {
-    // position: absolute;
-    // right: 0.1%;
-    // bottom: 18%;
-
-    // // max-width: 487px;
-    // width: 100%;
-    // margin: 0.85em 0 0 $gap;
-    // height: 3px;
-
-    // content: "";
-
-    // background-color: $color-border-accent;
     position: absolute;
 
     width: 100%;
@@ -72,27 +60,52 @@ h1 {
     content: "";
 
     border-bottom: 3px solid $color-border-accent;
-    // @include lg {
-    //   width: 256.5px;
-    // }
-    // @include lg-md {
-    //   bottom: 16%;
-    // }
-    // @include md {
-    //   width: 360px;
-    // }
-    // @include sm {
-    //   right: 0.6%;
-
-    //   width: 185px;
-    // }
-    // @include xs {
-    // display: none;
-    // }
   }
-}
 }
 h2 {
   font-family: $font-header;
-  font-size: 2.5rem;
+
+  @include xs-min {
+    font-size: 2.5rem;
+  }
+  @include xs {
+    font-size: 1.75rem;
+  }
+
+  &::before {
+    position: absolute;
+    left: 0;
+
+    width: 30px;
+    margin: 0.25em 0 0 0;
+
+    content: "";
+
+    border-bottom: 3px solid $color-border-accent;
+  }
+
+  &::after {
+    position: absolute;
+
+    width: 100%;
+    margin: 0.85em 0 0 15px;
+
+    content: "";
+
+    border-bottom: 3px solid $color-border-accent;
+  }
+}
+
+h3 {
+  @include xs-min {
+    font-size: 1.5rem;
+  }
+  @include xs {
+    font-size: 1.25rem;
+  }
+}
+section {
+  position: relative;
+
+  overflow: hidden;
 }

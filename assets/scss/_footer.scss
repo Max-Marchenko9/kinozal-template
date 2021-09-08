@@ -9,8 +9,8 @@
     height: 266px;
   }
   @include lg-md {
-    min-height: 422px;
-    padding-top: 47px;
+    // min-height: 422px;
+  padding-top: 47px;
   }
     @include md-sm {
       min-height: 422px;
@@ -67,13 +67,13 @@
       letter-spacing: 0.004em;
     }
     @include md-sm {
-      margin-top: 17px;
+      margin-top: 19px;
       margin-left: 1px;
       letter-spacing: 0.004em;
     }
     
     @include sm {
-      margin-top: 17px;
+      margin-top: 18px;
       margin-left: 1px;
       // letter-spacing: 0.004em;
     }
@@ -81,5 +81,5 @@
     a {
       color: $color-gray;
     }
-  }
+  } 
 }

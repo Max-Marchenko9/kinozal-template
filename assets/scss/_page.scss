@@ -1,43 +1,38 @@
 .film-info {
-  // margin-bottom: $gap * 5.333333;
-  @extend %margin-bottom-lg;
+  margin-bottom: ($gap * 2) + 10px;
+  // @extend %margin-bottom-lg;
+
   font-size: 1.2rem;
+
+  @include lg {
+    margin-bottom: ($gap * 2) + 9px;
+  }
   &__title {
     margin-bottom: 46px;
     // margin-left: -2px;
+
     @include lg-md {
-      margin-top: -10px;
+      margin-top: -9px;
       margin-left: -2px;
     }
     @include md-sm {
+      margin-top: -7px;
       margin-left: -2px;
     }
-    &::after {
-      width: 416px !important;
-
-      @include lg-md {
-        width: 185px !important;
-        top: 77%;
-      }
-      @include md-sm {
-        width: 289px !important;
-      }
-      @include sm {
-        width: 111px !important;
-        right: 0.1%;
-      }
-      
-      
+    @include sm {
+      margin-top: -8px;
+      // margin-right: 10px !important;
+      margin-left: 1px;
     }
   }
   &__wrapper {
     white-space: nowrap;
-    
+
     // @include lg-md {
     //   padding-right: 2px;
     //   padding-bottom: 2px;
     // }
-      
+
     &:not(:last-of-type) {
       margin-right: $gap;
     }
@@ -45,144 +40,60 @@
   &__well {
     border-top-left-radius: none;
     border-top-right-radius: none;
+    //   @include lg-md {
+    //     margin-left: -2px;
+    // /* padding-bottom: 23px; */
+    //     margin-top: -2px;
+    //   }
 
-  //   @include lg-md {
-  //     margin-left: -2px;
-  // /* padding-bottom: 23px; */
-  //     margin-top: -2px;
-  //   }
     @include md-sm {
       padding-left: 13px;
-        // margin-left: -5px;
-      }
+      // margin-left: -5px;
+    }
   }
   &__badge {
     font-size: 0.8em;
   }
 }
-// .ytp-cued-thumbnail-overlay-image {
-//   &-chrome-top {
-//     @include sm {
-//       max-height: 40px !important;
-//     }
-    // .ytp-title-channel {
-    //   @include sm {
-    //     height: 40px !important;
-    //   }
-    // }
-    // .ytp-title-text {
-    //   @include sm {
-    //     font-size: 0.8rem !important;
-    //   }
-    // }
-//   }
-// }
-
-// .ytp-title-channel-logo {
-//   width: 30px !important;
-//   height: 30px !important;
-// }
-.movie-description,
-.movie-reviews,
-.film-comment-form {
-  position: relative;
-  
-  &__title {
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 0;
-
-      width: 30px;
-      height: 3px;
-
-      content: "";
-
-      background-color: $color-border-accent;
-      
-      @include xs {
-        display: none;
-        }
-    }
-    &::after {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-
-      width: 507px;
-      height: 3px;
-
-      content: "";
-
-      background-color: $color-border-accent;
-
-      @include xs {
-        display: none;
-        }
-    }
-  }
-}
 .movie-description {
-  @extend %margin-bottom-lg;
+  margin-bottom: ($gap * 2) + 10px;
+
   line-height: 1.45em;
 
   @include  lg-md {
+    margin-bottom: ($gap * 2) + 7px;
+
     line-height: 1.4em;
-    margin-bottom: ($gap * 5.3333333) + 1px;
+  }
+  @include md-sm {
+    margin-bottom: ($gap * 2) + 12px;
+
+    line-height: 1.4em;
   }
   @include  sm {
-    line-height: 1.39em;
-    margin-bottom: ($gap * 5.3333333) + 7px;
+    margin-bottom: ($gap * 3) - 1px;
+
+    line-height: 1.4em;
   }
   &__title {
-    margin-left: $gap * 3;
     margin-bottom: ($gap * 3) - 1px;
-    
+    margin-left: $gap * 3;
+
     @include lg-md {
-      margin-left: ($gap * 3) - 2px;
       margin-bottom: $gap * 3;
+      margin-left: ($gap * 3) - 2px;
     }
     @include md-sm {
       margin-left: ($gap * 3) - 2px;
     }
     @include sm {
-      margin-left: ($gap * 3) + 1px;
       margin-bottom: ($gap * 3);
-    }
-    &::before {
-      top: 3.5%;
-
-      @include lg-md {
-        top: 2.7%;
-      }
-      @include md-sm {
-        top: 2.85%;
-      }
-      @include sm {
-        top: 2.6%;
-      }
-      
-    }
-    &::after {
-      top: 12%;
-      width: 447px;
-
-      @include lg-md {
-        width: 216px;
-        top: 9.5%;
-      }
-      @include md-sm {
-        width: 320px;
-        top: 10.6%;
-      }
-      @include sm {
-        width: 145px;
-        top: 9.1%;
-      }
+      margin-left: ($gap * 3) + 1px;
     }
   }
   .well {
     padding-bottom: $gap - 3px;
+
     @include lg-md {
       padding-bottom: $gap + 3px;
     }
@@ -193,20 +104,24 @@
   }
 }
 .movie-reviews {
-  margin-bottom: ($gap * 3) + 3px;
-  line-height: 1.45em;
+  margin-bottom: ($gap * 2) - 1px;
   padding-bottom: $gap - 3px;
 
+  line-height: 1.45em;
+
   @include lg-md {
+    margin-bottom: ($gap * 2) - 5px;
+
     line-height: 1.4em;
   }
   @include sm {
+    margin-bottom: ($gap * 2) + 6px;
+
     line-height: 1.4em;
-    margin-bottom: ($gap * 3) + 8px;
   }
   &__title {
-    margin-left: ($gap * 3) + 1px;
     margin-bottom: ($gap * 3);
+    margin-left: ($gap * 3) + 1px;
 
     @include lg-md {
       margin-left: ($gap * 3) - 2px;
@@ -214,41 +129,14 @@
     @include md-sm {
       margin-left: ($gap * 3) - 1px;
     }
-    &::before {
-      top: 2.1%;
-
-      @include lg-md {
-        top: 1.6%;
-      }
-      @include md-sm {
-        top: 1.67%;
-        left: -0.2%;
-      }
-      @include sm {
-        top: 1.44%;
-        left: 0.3%;
-      }
-    }
-    &::after {
-      top: 6.6%;
-      width: 452px;
-
-      @include lg-md {
-        top: 5.4%;
-      width: 222px; 
-      }
-      @include md-sm {
-        top: 5.62%;
-      width: 325px; 
-      }
-      @include sm {
-        top: 5%;
-      width: 149px; 
-      right: -0.2%;
-      }
-    }
   }
   .panel-comment-1 {
+    @include lg {
+      margin-bottom: ($gap * 2) - 3px;
+    }
+    @include md-sm {
+      margin-bottom: ($gap * 2) + 2px;
+    }
     @include sm {
       margin-bottom: ($gap * 2) + 5px;
     }
@@ -257,78 +145,51 @@
     height: 47px;
     padding-top: 12px;
     padding-left: $gap;
-    
+
     @include md-sm {
       padding-left: $gap - 2px;
+      // padding-top: 14px
     }
   }
-  
+
   .panel-body {
     padding-bottom: $gap - 5px;
     padding-left: 16px;
 
     @include lg-md {
-      padding-left: $gap;
       padding-bottom: $gap;
+      padding-left: $gap;
     }
     @include md-sm {
-      padding-left: $gap - 2px;
-      line-height: 1.38;
+      padding-top: 16px;
       padding-bottom: $gap;
-        }
+      padding-left: $gap - 2px;
+
+      line-height: 1.38;
+    }
+    @include sm {
+      padding-bottom: $gap - 10px;
+
+      line-height: 1.4em;
+    }
   }
 }
 .film-comment-form {
-
   @include md-sm {
-    margin-bottom: ($gap * 9) + 7px;
+    margin-bottom: ($gap * 5) + 7px;
   }
   @include sm {
-    margin-bottom: ($gap * 9) + 5px;
+    margin-bottom: ($gap * 5) + 5px;
   }
   &__title {
-    margin-left: ($gap * 3);
     margin-bottom: ($gap * 3);
+    margin-left: ($gap * 3);
 
     @include lg-md {
       margin-left: ($gap * 3) - 2px;
     }
     @include md-sm {
       margin-left: ($gap * 3) - 2px;
-    }
-
-    &::before {
-      top: 2.6%;
-      left: -0.2%;
-
-      @include lg-md {
-        top: 2.3%;
-      }
-      @include md-sm {
-        top: 2.25%;
-      }
-      @include sm {
-        top: 2.1%;
-        left: 0%;
-      }
-    }
-    &::after {
-      top: 8.2%;
-      width: 346px;
-      
-      @include lg-md {
-        top: 8%;
-        width: 118px;
-      }
-      @include md-sm {
-        top: 8%;
-        width: 221px;
-      }
-      @include sm {
-        width: 43px;
-        top: 7.8%;
-        right: 0.1%;
-      }
     }
   }
   input {
@@ -343,6 +204,7 @@
   }
   &__button {
     float: right;
+
     border: none;
     // padding-top: 12px;
     // margin-right: 1px;
@@ -353,14 +215,14 @@
     }
     @include md-sm {
       margin-right: 3px;
-      padding-top: 11px; 
+      padding-top: 11px;
     }
     @include sm {
       width: 117px;
       height: 46px;
-      margin-right: 0px;
       margin-top: -2px;
-      padding-top: 11px; 
+      margin-right: 0;
+      padding-top: 11px;
     }
   }
 }
