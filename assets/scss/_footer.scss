@@ -1,5 +1,5 @@
 .footer {
-  height: 268px;
+  min-height: 268px;
   padding-top: 45px;
 
   color: $color-gray;
@@ -8,19 +8,30 @@
   @include lg-min {
     height: 266px;
   }
-  @include md {
+  @include lg-md {
     min-height: 422px;
-    padding-top: 46px;
+    padding-top: 47px;
   }
-  // @include lg-md {
-  //   // line-height: 22.3px;
-  // }
-  @include sm {
+    @include md-sm {
+      min-height: 422px;
+    padding-top: 47px;
+  }
+  @include sm-xs {
     max-height: 422px;
+    padding-top: 47px;
   }
+  @include xs {
+    height: auto;
+    }
 
   h4 {
     margin-top: 9px;
+    @include md-sm {
+      margin-top: 7px;
+    }
+    @include sm {
+      margin-top: 7px;
+    }
   }
   ul {
     padding: 0;
@@ -50,23 +61,19 @@
     @include lg-min {
       margin-left: -2px;
     }
-    @include lg {
-      margin-top: 21px;
-      margin-left: 2px;
-
-      letter-spacing: 0.004em;
-    }
-    @include md {
-      margin-top: 20px;
-      margin-left: 1px;
-
-      letter-spacing: 0.004em;
-    }
     @include lg-md {
-      margin-top: 20px;
+      margin-top: 17px;
+      margin-left: 1px;
+      letter-spacing: 0.004em;
     }
+    @include md-sm {
+      margin-top: 17px;
+      margin-left: 1px;
+      letter-spacing: 0.004em;
+    }
+    
     @include sm {
-      margin-top: 20px;
+      margin-top: 17px;
       margin-left: 1px;
       // letter-spacing: 0.004em;
     }

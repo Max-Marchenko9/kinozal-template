@@ -7,6 +7,9 @@
   @include lg-md {
     margin-bottom: 81px;
   }
+  @include sm {
+    margin-bottom: 80px;
+  }
   .site-search {
     margin-bottom: $gap * 3;
 
@@ -29,9 +32,7 @@
   @include lg {
     margin-bottom: 72px;
   }
-  @include lg-md {
-    min-height: 292px;
-  }
+  
 
   &-row {
     margin-right: -$gap / 2;
@@ -47,12 +48,13 @@
       margin-bottom: $gap - 0.5px;
       // min-height: 386px;
     }
-    @include md {
-      max-height: 386px;
-    }
-    @include sm {
-      max-height: 386px;
-    }
+    
+    // @include md {
+    //   max-height: 386px;
+    // }
+    // @include sm {
+    //   max-height: 386px;
+    // }
 
     & img {
       width: 100%;
@@ -116,7 +118,7 @@
     margin-bottom: 76px;
   }
   @include md-sm {
-    margin-bottom: 78px;
+    margin-bottom: 76px;
   }
   @include sm {
     margin-bottom: 75px;
@@ -199,6 +201,9 @@
   }
 }
 .news-movie {
+  @include md-sm {
+    margin-bottom: ($gap * 5) + 4px;
+  }
   h2 {
     //  margin-top: 23px;
     position: relative;
@@ -208,9 +213,8 @@
 
     font-family: $font-header;
     font-size: 2.5rem;
-    // @include lg-md {
-    //   // margin-top: px;
-    // }
+    
+    
     &::before {
       position: absolute;
       top: 22%;
@@ -271,10 +275,16 @@
 
       margin-bottom: 30px;
     }
+    &__text {
+      line-height: 1.4em;
+    }
   }
 }
 .user-login__tabs a {
   @include sm {
     padding: 14px 0 11px 10px!important;
   }
+}
+.new-films {
+position: relative;
 }

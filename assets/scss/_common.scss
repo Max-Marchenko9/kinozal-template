@@ -21,56 +21,76 @@ a {
 }
 
 h1 {
-  position: relative;
+  // position: relative;
 
-  margin-top: -7px;  //не забыть исправить!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  margin-bottom: $gap * 3;
+  // margin-top: -7px;  //не забыть исправить!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  // margin-bottom: $gap * 3;
 
-  font-family: $font-header;
-  font-size: 3rem;
+  // font-family: $font-header;
+  // font-size: 3rem;
 
-  @include lg-md {
-    margin-bottom: ($gap * 3) + 2px;
-    // margin-bottom: 100px;
-  }
-  @include md {
-    margin-bottom: ($gap * 3) - 1px;
-  }
-  @include sm {
-    margin-bottom: ($gap * 3) - 1px;
-  }
+  // @include lg-md {
+  //   margin-bottom: ($gap * 3) + 2px;
+  //   // margin-bottom: 100px;
+  // }
+  // @include md {
+  //   margin-bottom: ($gap * 3) - 1px;
+  // }
   // @include sm {
-  //   margin-left: -1px;
+  //   margin-bottom: ($gap * 3) - 1px; 
   // }
 
+  font-family: $font-header;
 
+  @include xs-min {
+    // margin: -($gap-md) 0 1em 0;
+
+    font-size: 3rem;
+  }
+  @include xs { 
+    margin: 0 0 1em;
+
+    font-size: 2rem;
   &::after {
-    position: absolute;
-    right: 0.1%;
-    bottom: 18%;
+    // position: absolute;
+    // right: 0.1%;
+    // bottom: 18%;
 
-    width: 487px;
-    height: 3px;
+    // // max-width: 487px;
+    // width: 100%;
+    // margin: 0.85em 0 0 $gap;
+    // height: 3px;
+
+    // content: "";
+
+    // background-color: $color-border-accent;
+    position: absolute;
+
+    width: 100%;
+    margin: 0.85em 0 0 $gap;
 
     content: "";
 
-    background-color: $color-border-accent;
+    border-bottom: 3px solid $color-border-accent;
+    // @include lg {
+    //   width: 256.5px;
+    // }
+    // @include lg-md {
+    //   bottom: 16%;
+    // }
+    // @include md {
+    //   width: 360px;
+    // }
+    // @include sm {
+    //   right: 0.6%;
 
-    @include lg {
-      width: 256.5px;
-    }
-    @include lg-md {
-      bottom: 16%;
-    }
-    @include md {
-      width: 360px;
-    }
-    @include sm {
-      right: 0.6%;
-
-      width: 185px;
-    }
+    //   width: 185px;
+    // }
+    // @include xs {
+    // display: none;
+    // }
   }
+}
 }
 h2 {
   font-family: $font-header;

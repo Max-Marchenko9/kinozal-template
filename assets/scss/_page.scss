@@ -5,6 +5,13 @@
   &__title {
     margin-bottom: 46px;
     // margin-left: -2px;
+    @include lg-md {
+      margin-top: -10px;
+      margin-left: -2px;
+    }
+    @include md-sm {
+      margin-left: -2px;
+    }
     &::after {
       width: 416px !important;
 
@@ -12,6 +19,15 @@
         width: 185px !important;
         top: 77%;
       }
+      @include md-sm {
+        width: 289px !important;
+      }
+      @include sm {
+        width: 111px !important;
+        right: 0.1%;
+      }
+      
+      
     }
   }
   &__wrapper {
@@ -35,11 +51,37 @@
   // /* padding-bottom: 23px; */
   //     margin-top: -2px;
   //   }
+    @include md-sm {
+      padding-left: 13px;
+        // margin-left: -5px;
+      }
   }
   &__badge {
     font-size: 0.8em;
   }
 }
+// .ytp-cued-thumbnail-overlay-image {
+//   &-chrome-top {
+//     @include sm {
+//       max-height: 40px !important;
+//     }
+    // .ytp-title-channel {
+    //   @include sm {
+    //     height: 40px !important;
+    //   }
+    // }
+    // .ytp-title-text {
+    //   @include sm {
+    //     font-size: 0.8rem !important;
+    //   }
+    // }
+//   }
+// }
+
+// .ytp-title-channel-logo {
+//   width: 30px !important;
+//   height: 30px !important;
+// }
 .movie-description,
 .movie-reviews,
 .film-comment-form {
@@ -57,6 +99,10 @@
       content: "";
 
       background-color: $color-border-accent;
+      
+      @include xs {
+        display: none;
+        }
     }
     &::after {
       position: absolute;
@@ -69,6 +115,10 @@
       content: "";
 
       background-color: $color-border-accent;
+
+      @include xs {
+        display: none;
+        }
     }
   }
 }
@@ -80,6 +130,10 @@
     line-height: 1.4em;
     margin-bottom: ($gap * 5.3333333) + 1px;
   }
+  @include  sm {
+    line-height: 1.39em;
+    margin-bottom: ($gap * 5.3333333) + 7px;
+  }
   &__title {
     margin-left: $gap * 3;
     margin-bottom: ($gap * 3) - 1px;
@@ -88,12 +142,26 @@
       margin-left: ($gap * 3) - 2px;
       margin-bottom: $gap * 3;
     }
+    @include md-sm {
+      margin-left: ($gap * 3) - 2px;
+    }
+    @include sm {
+      margin-left: ($gap * 3) + 1px;
+      margin-bottom: ($gap * 3);
+    }
     &::before {
       top: 3.5%;
 
       @include lg-md {
         top: 2.7%;
       }
+      @include md-sm {
+        top: 2.85%;
+      }
+      @include sm {
+        top: 2.6%;
+      }
+      
     }
     &::after {
       top: 12%;
@@ -103,12 +171,24 @@
         width: 216px;
         top: 9.5%;
       }
+      @include md-sm {
+        width: 320px;
+        top: 10.6%;
+      }
+      @include sm {
+        width: 145px;
+        top: 9.1%;
+      }
     }
   }
   .well {
     padding-bottom: $gap - 3px;
     @include lg-md {
       padding-bottom: $gap + 3px;
+    }
+    @include md-sm {
+      padding-bottom: $gap;
+      padding-left: $gap + 3px;
     }
   }
 }
@@ -120,6 +200,10 @@
   @include lg-md {
     line-height: 1.4em;
   }
+  @include sm {
+    line-height: 1.4em;
+    margin-bottom: ($gap * 3) + 8px;
+  }
   &__title {
     margin-left: ($gap * 3) + 1px;
     margin-bottom: ($gap * 3);
@@ -127,11 +211,22 @@
     @include lg-md {
       margin-left: ($gap * 3) - 2px;
     }
+    @include md-sm {
+      margin-left: ($gap * 3) - 1px;
+    }
     &::before {
       top: 2.1%;
 
       @include lg-md {
         top: 1.6%;
+      }
+      @include md-sm {
+        top: 1.67%;
+        left: -0.2%;
+      }
+      @include sm {
+        top: 1.44%;
+        left: 0.3%;
       }
     }
     &::after {
@@ -140,14 +235,32 @@
 
       @include lg-md {
         top: 5.4%;
-      width: 222px;
+      width: 222px; 
       }
+      @include md-sm {
+        top: 5.62%;
+      width: 325px; 
+      }
+      @include sm {
+        top: 5%;
+      width: 149px; 
+      right: -0.2%;
+      }
+    }
+  }
+  .panel-comment-1 {
+    @include sm {
+      margin-bottom: ($gap * 2) + 5px;
     }
   }
   .panel-heading {
     height: 47px;
     padding-top: 12px;
     padding-left: $gap;
+    
+    @include md-sm {
+      padding-left: $gap - 2px;
+    }
   }
   
   .panel-body {
@@ -158,9 +271,21 @@
       padding-left: $gap;
       padding-bottom: $gap;
     }
+    @include md-sm {
+      padding-left: $gap - 2px;
+      line-height: 1.38;
+      padding-bottom: $gap;
+        }
   }
 }
 .film-comment-form {
+
+  @include md-sm {
+    margin-bottom: ($gap * 9) + 7px;
+  }
+  @include sm {
+    margin-bottom: ($gap * 9) + 5px;
+  }
   &__title {
     margin-left: ($gap * 3);
     margin-bottom: ($gap * 3);
@@ -168,13 +293,23 @@
     @include lg-md {
       margin-left: ($gap * 3) - 2px;
     }
+    @include md-sm {
+      margin-left: ($gap * 3) - 2px;
+    }
 
     &::before {
       top: 2.6%;
-      left: -0.1%;
+      left: -0.2%;
 
       @include lg-md {
         top: 2.3%;
+      }
+      @include md-sm {
+        top: 2.25%;
+      }
+      @include sm {
+        top: 2.1%;
+        left: 0%;
       }
     }
     &::after {
@@ -185,6 +320,25 @@
         top: 8%;
         width: 118px;
       }
+      @include md-sm {
+        top: 8%;
+        width: 221px;
+      }
+      @include sm {
+        width: 43px;
+        top: 7.8%;
+        right: 0.1%;
+      }
+    }
+  }
+  input {
+    @include md-sm {
+      padding-left: 14px;
+    }
+  }
+  textarea {
+    @include md-sm {
+      padding-left: 10px;
     }
   }
   &__button {
@@ -196,6 +350,17 @@
     @include lg-md {
       margin-right: 4px;
       padding-top: 11px;
+    }
+    @include md-sm {
+      margin-right: 3px;
+      padding-top: 11px; 
+    }
+    @include sm {
+      width: 117px;
+      height: 46px;
+      margin-right: 0px;
+      margin-top: -2px;
+      padding-top: 11px; 
     }
   }
 }
