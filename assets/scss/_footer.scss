@@ -65,16 +65,21 @@
       margin-top: 17px;
       margin-left: 1px;
       letter-spacing: 0.004em;
+      margin-bottom: auto;
+
     }
     @include md-sm {
       margin-top: 19px;
       margin-left: 1px;
-      letter-spacing: 0.004em;
+      letter-spacing: 0.004em;  
+          margin-bottom: auto;
+
     }
     
     @include sm {
       margin-top: 18px;
       margin-left: 1px;
+      margin-bottom: 18px;
       // letter-spacing: 0.004em;
     }
 

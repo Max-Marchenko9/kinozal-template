@@ -30,7 +30,10 @@
   background-color: #517ba2;
 }
 
-.navbar-inverse, .navbar-collapse, .navbar-inverse, .navbar-form {
+.navbar-inverse,
+.navbar-collapse,
+.navbar-inverse,
+.navbar-form {
   background-color: #232323;
 }
 
@@ -183,7 +186,7 @@ section {
 
 .header-logo__description {
   display: block;
-  margin-top: 0px;
+  margin-top: 0;
   letter-spacing: 0.2em;
   color: #ffffff;
   font-size: 1.15rem;
@@ -338,8 +341,8 @@ section {
 }
 
 .movie-description__title {
-  margin-left: 45px;
   margin-bottom: 44px;
+  margin-left: 45px;
 }
 
 .movie-description .well {
@@ -348,13 +351,13 @@ section {
 
 .movie-reviews {
   margin-bottom: 29px;
-  line-height: 1.45em;
   padding-bottom: 12px;
+  line-height: 1.45em;
 }
 
 .movie-reviews__title {
-  margin-left: 46px;
   margin-bottom: 45px;
+  margin-left: 46px;
 }
 
 .movie-reviews .panel-heading {
@@ -369,8 +372,8 @@ section {
 }
 
 .film-comment-form__title {
-  margin-left: 45px;
   margin-bottom: 45px;
+  margin-left: 45px;
 }
 
 .film-comment-form__button {
@@ -599,7 +602,7 @@ section {
   }
   .new-films,
   .top-week {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
   .film-info {
     margin-bottom: 39px;
@@ -626,8 +629,8 @@ section {
     height: 61px;
   }
   h1 {
-    margin-bottom: 47px;
     margin-top: -7px;
+    margin-bottom: 47px;
   }
   .header {
     margin-bottom: 80px;
@@ -655,26 +658,26 @@ section {
     margin-left: -2px;
   }
   .movie-description {
-    line-height: 1.4em;
     margin-bottom: 37px;
+    line-height: 1.4em;
   }
   .movie-description__title {
-    margin-left: 43px;
     margin-bottom: 45px;
+    margin-left: 43px;
   }
   .movie-description .well {
     padding-bottom: 18px;
   }
   .movie-reviews {
-    line-height: 1.4em;
     margin-bottom: 25px;
+    line-height: 1.4em;
   }
   .movie-reviews__title {
     margin-left: 43px;
   }
   .movie-reviews .panel-body {
-    padding-left: 15px;
     padding-bottom: 15px;
+    padding-left: 15px;
   }
   .film-comment-form__title {
     margin-left: 43px;
@@ -690,6 +693,7 @@ section {
     margin-top: 17px;
     margin-left: 1px;
     letter-spacing: 0.004em;
+    margin-bottom: auto;
   }
 }
 
@@ -713,8 +717,8 @@ section {
 
 @media (max-width: 991.8px) and (min-width: 768px) {
   h1 {
-    margin-bottom: 44px;
     margin-top: -7px;
+    margin-bottom: 44px;
   }
   .header-logo {
     padding: 99px 0 100px 0;
@@ -739,15 +743,15 @@ section {
     margin-bottom: 26px;
   }
   .film-info__title {
-    margin-left: -2px;
     margin-top: -7px;
+    margin-left: -2px;
   }
   .film-info__well {
     padding-left: 13px;
   }
   .movie-description {
-    line-height: 1.4em;
     margin-bottom: 42px;
+    line-height: 1.4em;
   }
   .movie-description__title {
     margin-left: 43px;
@@ -766,10 +770,10 @@ section {
     padding-left: 13px;
   }
   .movie-reviews .panel-body {
+    padding-top: 16px;
+    padding-bottom: 15px;
     padding-left: 13px;
     line-height: 1.38;
-    padding-bottom: 15px;
-    padding-top: 16px;
   }
   .film-comment-form {
     margin-bottom: 82px;
@@ -798,6 +802,7 @@ section {
     margin-top: 19px;
     margin-left: 1px;
     letter-spacing: 0.004em;
+    margin-bottom: auto;
   }
 }
 
@@ -845,9 +850,9 @@ section {
     margin-bottom: 40px;
   }
   .top-week h2 {
+    margin-top: 57px;
     margin-bottom: 46px;
     margin-left: 44px;
-    margin-top: 57px;
   }
   .film-news-item__button {
     margin-bottom: 27px;
@@ -856,27 +861,27 @@ section {
     padding: 14px 0 11px 10px !important;
   }
   .film-info__title {
-    margin-left: 1px;
     margin-top: -8px;
+    margin-left: 1px;
   }
   .movie-description {
-    line-height: 1.4em;
     margin-bottom: 44px;
+    line-height: 1.4em;
   }
   .movie-description__title {
-    margin-left: 46px;
     margin-bottom: 45px;
+    margin-left: 46px;
   }
   .movie-reviews {
-    line-height: 1.4em;
     margin-bottom: 36px;
+    line-height: 1.4em;
   }
   .movie-reviews .panel-comment-1 {
     margin-bottom: 35px;
   }
   .movie-reviews .panel-body {
-    line-height: 1.4em;
     padding-bottom: 5px;
+    line-height: 1.4em;
   }
   .film-comment-form {
     margin-bottom: 80px;
@@ -884,8 +889,8 @@ section {
   .film-comment-form__button {
     width: 117px;
     height: 46px;
-    margin-right: 0px;
     margin-top: -2px;
+    margin-right: 0;
     padding-top: 11px;
   }
   .left-sidebar {
@@ -906,6 +911,7 @@ section {
   .footer-bottom {
     margin-top: 18px;
     margin-left: 1px;
+    margin-bottom: 18px;
   }
 }
 
