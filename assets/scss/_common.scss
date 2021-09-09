@@ -25,8 +25,7 @@ a {
 }
 
 h1 {
-  // position: relative;
-  margin-top: -9px; //не забыть исправить!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  margin-top: -9px;
   margin-bottom: $gap * 3;
 
   font-family: $font-header;
@@ -34,7 +33,6 @@ h1 {
   @include lg-md {
     margin-top: -7px;
     margin-bottom: ($gap * 3) + 2px;
-    // margin-bottom: 100px;
   }
   @include md-sm {
     margin-top: -7px;
@@ -44,7 +42,6 @@ h1 {
     margin-bottom: ($gap * 3) + 1px;
   }
   @include xs-min {
-    // margin: -(10px) 0 1em 0;
     font-size: 3rem;
   }
   @include xs {

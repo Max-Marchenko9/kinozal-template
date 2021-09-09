@@ -49,15 +49,7 @@
 
     @include lg-md {
       margin-bottom: $gap - 0.5px;
-      // min-height: 386px;
     }
-
-    // @include md {
-    //   max-height: 386px;
-    // }
-    // @include sm {
-    //   max-height: 386px;
-    // }
 
     & img {
       width: 100%;
@@ -76,9 +68,6 @@
 
     &__thumbnail {
       margin-bottom: 0;
-      // @include lg-md {
-      //   height: 292px;
-      // }
     }
 
     &__title {
@@ -153,7 +142,6 @@
     margin-bottom: ($gap * 5) + 4px;
   }
   h2 {
-    //  margin-top: 23px;
     margin-bottom: ($gap * 3) - 1px;
     margin-left: $gap * 3;
 
@@ -162,9 +150,6 @@
   }
 }
 .film-news {
-  // a {
-  //   // letter-spacing: 0.0000005em;
-  // }
   &-item {
     &__button {
       float: right;
@@ -188,6 +173,3 @@
     padding: 14px 0 11px 10px!important;
   }
 }
-// .new-films {
-// position: relative;
-// }

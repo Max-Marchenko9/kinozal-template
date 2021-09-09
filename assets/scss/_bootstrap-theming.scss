@@ -147,7 +147,6 @@
 }
 .user-login {
   position: relative;
-  // margin-bottom: ($gap * 2) - 1px;
 
   &__tabs {
     position: absolute;
@@ -180,5 +179,5 @@
 .embed-responsive {
   border: 1px solid $color-gray;
   border-bottom: none;
-  border-radius: 4px 4px 0 0;
+  border-radius: 5px 5px 0 0;
 }

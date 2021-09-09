@@ -1,6 +1,5 @@
 .film-info {
   margin-bottom: ($gap * 2) + 10px;
-  // @extend %margin-bottom-lg;
 
   font-size: 1.2rem;
 
@@ -12,12 +11,10 @@
 
     @include md-sm {
       padding-left: 13px;
-      // margin-left: -5px;
     }
   }
   &__title {
     margin-bottom: 46px;
-    // margin-left: -2px;
 
     @include lg-md {
       margin-top: -9px;
@@ -29,17 +26,11 @@
     }
     @include sm {
       margin-top: -8px;
-      // margin-right: 10px !important;
       margin-left: 1px;
     }
   }
   &__wrapper {
     white-space: nowrap;
-
-    // @include lg-md {
-    //   padding-right: 2px;
-    //   padding-bottom: 2px;
-    // }
 
     &:not(:last-of-type) {
       margin-right: $gap;
@@ -132,20 +123,8 @@
     }
     @include md-sm {
       margin-left: ($gap * 3) - 1px;
-      // margin-bottom: ($gap * 3) - 1px;
     }
   }
-  // .panel-comment-1 {
-  //   @include lg {
-  //     margin-bottom: ($gap * 2) - 3px;
-  //   }
-  //   @include md-sm {
-  //     margin-bottom: ($gap * 2) + 2px;
-  //   }
-  //   @include sm {
-  //     margin-bottom: ($gap * 2) + 5px;
-  //   }
-  // }
   .panel-heading {
     height: 47px;
     padding-top: 12px;
@@ -214,8 +193,6 @@
     float: right;
 
     border: none;
-    // padding-top: 12px;
-    // margin-right: 1px;
 
     @include lg-md {
       margin-right: 4px;
