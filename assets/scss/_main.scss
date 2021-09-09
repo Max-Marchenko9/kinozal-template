@@ -8,7 +8,7 @@
     margin-bottom: 81px;
   }
   @include md-sm {
-    margin-bottom: 83px;
+    margin-bottom: 80px;
   }
   @include sm {
     margin-bottom: 81px;
@@ -118,10 +118,10 @@
   margin-bottom: 40px;
 
   @include lg-md {
-    margin-bottom: 38px;
+    margin-bottom: 40px;
   }
   @include md-sm {
-    margin-bottom: 40px;
+    margin-bottom: 43px;
   }
   @include sm {
     margin-bottom: 40px;
@@ -134,15 +134,15 @@
     font-size: 2.5rem;
 
     @include lg-md {
-      margin-top: 57px;
-      margin-bottom: 45px;
+      margin-top: 60px;
+      margin-bottom: 46px;
     }
     @include md-sm {
-      margin-top: 57px;
+      margin-top: 61px;
       margin-bottom: 44px;
     }
     @include sm {
-      margin-top: 57px;
+      margin-top: 58px;
       margin-bottom: ($gap * 3) + 1px;
       margin-left: ($gap * 3) - 1px;
     }
@@ -172,10 +172,10 @@
       margin-bottom: 30px;
 
       @include md-sm {
-        margin-bottom: 26px;
+        margin-bottom: 30px;
       }
       @include sm {
-        margin-bottom: 27px;
+        margin-bottom: 31px;
       }
     }
     &__text {

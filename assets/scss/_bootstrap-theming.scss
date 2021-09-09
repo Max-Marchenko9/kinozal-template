@@ -103,6 +103,7 @@
 
   @include sm {
     margin-left: 6px;
+    // margin-right: 9px;
   }
 }
 .panel {
@@ -110,7 +111,7 @@
     margin-bottom: $gap * 2;
 
     border: none;
-    background-color: darken($color-light, 7%);
+    background-color: #f4f4f4;
 
     > .panel-heading {
       padding-left: 14px;
@@ -135,7 +136,7 @@
   border-radius: 0 0 4px 4px;
 
   @include sm {
-    padding: 15px 10px 15px 15px;
+    padding: 15px 15px 15px 15px;
   }
 }
 .input {
@@ -175,4 +176,9 @@
 }
 .glyphicon:hover {
   color: #ffffff !important;
+}
+.embed-responsive {
+  border: 1px solid $color-gray;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
 }

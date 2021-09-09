@@ -150,7 +150,7 @@ $image-size-with-padding: $image-size + 10px;
 .site-search,
 .user-login {
   @include sm {
-    max-width: 540px;
+    // max-width: 540px;
     margin-right: auto;
     margin-left: auto;
   }

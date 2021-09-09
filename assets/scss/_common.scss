@@ -41,14 +41,15 @@ h1 {
     margin-bottom: ($gap * 3) - 1px;
   }
   @include sm {
-    margin-bottom: ($gap * 3) - 1px;
+    margin-bottom: ($gap * 3) + 1px;
   }
   @include xs-min {
     // margin: -(10px) 0 1em 0;
     font-size: 3rem;
   }
   @include xs {
-    // margin: 0 0 1em;
+    padding-top: 3px;
+
     font-size: 2rem;
   }
   &::after {

@@ -7,6 +7,14 @@
   @include lg {
     margin-bottom: ($gap * 2) + 9px;
   }
+  &__well {
+    border-radius: 0 0 4px 4px;
+
+    @include md-sm {
+      padding-left: 13px;
+      // margin-left: -5px;
+    }
+  }
   &__title {
     margin-bottom: 46px;
     // margin-left: -2px;
@@ -37,20 +45,7 @@
       margin-right: $gap;
     }
   }
-  &__well {
-    border-top-left-radius: none;
-    border-top-right-radius: none;
-    //   @include lg-md {
-    //     margin-left: -2px;
-    // /* padding-bottom: 23px; */
-    //     margin-top: -2px;
-    //   }
 
-    @include md-sm {
-      padding-left: 13px;
-      // margin-left: -5px;
-    }
-  }
   &__badge {
     font-size: 0.8em;
   }
@@ -61,17 +56,17 @@
   line-height: 1.45em;
 
   @include  lg-md {
-    margin-bottom: ($gap * 2) + 7px;
+    margin-bottom: ($gap * 2) + 11px;
 
     line-height: 1.4em;
   }
   @include md-sm {
-    margin-bottom: ($gap * 2) + 12px;
+    margin-bottom: ($gap * 2) + 11px;
 
     line-height: 1.4em;
   }
   @include  sm {
-    margin-bottom: ($gap * 3) - 1px;
+    margin-bottom: ($gap * 3) + 3px;
 
     line-height: 1.4em;
   }
@@ -98,7 +93,7 @@
       padding-bottom: $gap + 3px;
     }
     @include md-sm {
-      padding-bottom: $gap;
+      padding-bottom: $gap + 5px;
       padding-left: $gap + 3px;
     }
   }
@@ -110,7 +105,12 @@
   line-height: 1.45em;
 
   @include lg-md {
-    margin-bottom: ($gap * 2) - 5px;
+    margin-bottom: ($gap * 2) - 3px;
+
+    line-height: 1.4em;
+  }
+  @include md-sm {
+    margin-bottom: ($gap * 2) - 3px;
 
     line-height: 1.4em;
   }
@@ -127,20 +127,25 @@
       margin-left: ($gap * 3) - 2px;
     }
     @include md-sm {
+      margin-bottom: ($gap * 3) - 1px;
       margin-left: ($gap * 3) - 1px;
     }
-  }
-  .panel-comment-1 {
-    @include lg {
-      margin-bottom: ($gap * 2) - 3px;
-    }
     @include md-sm {
-      margin-bottom: ($gap * 2) + 2px;
-    }
-    @include sm {
-      margin-bottom: ($gap * 2) + 5px;
+      margin-left: ($gap * 3) - 1px;
+      // margin-bottom: ($gap * 3) - 1px;
     }
   }
+  // .panel-comment-1 {
+  //   @include lg {
+  //     margin-bottom: ($gap * 2) - 3px;
+  //   }
+  //   @include md-sm {
+  //     margin-bottom: ($gap * 2) + 2px;
+  //   }
+  //   @include sm {
+  //     margin-bottom: ($gap * 2) + 5px;
+  //   }
+  // }
   .panel-heading {
     height: 47px;
     padding-top: 12px;
@@ -190,6 +195,9 @@
     }
     @include md-sm {
       margin-left: ($gap * 3) - 2px;
+    }
+    @include sm {
+      margin-left: ($gap * 3) + 2px;
     }
   }
   input {

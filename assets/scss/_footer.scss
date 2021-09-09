@@ -10,10 +10,10 @@
   }
   @include lg-md {
     // min-height: 422px;
-  padding-top: 47px;
+    padding-top: 47px;
   }
-    @include md-sm {
-      min-height: 422px;
+  @include md-sm {
+    min-height: 422px;
     padding-top: 47px;
   }
   @include sm-xs {
@@ -22,10 +22,11 @@
   }
   @include xs {
     height: auto;
-    }
+  }
 
   h4 {
     margin-top: 9px;
+
     @include md-sm {
       margin-top: 7px;
     }
@@ -62,29 +63,28 @@
       margin-left: -2px;
     }
     @include lg-md {
-      margin-top: 17px;
-      margin-left: 1px;
-      letter-spacing: 0.004em;
+      margin-top: 19px;
       margin-bottom: auto;
+      margin-left: 1px;
 
+      letter-spacing: 0.004em;
     }
     @include md-sm {
-      margin-top: 19px;
+      margin-top: 20px;
+      margin-bottom: auto;
       margin-left: 1px;
-      letter-spacing: 0.004em;  
-          margin-bottom: auto;
 
+      letter-spacing: 0.004em;
     }
-    
     @include sm {
-      margin-top: 18px;
-      margin-left: 1px;
+      margin-top: 22px;
       margin-bottom: 18px;
+      margin-left: 1px;
       // letter-spacing: 0.004em;
     }
 
     a {
       color: $color-gray;
     }
-  } 
+  }
 }
